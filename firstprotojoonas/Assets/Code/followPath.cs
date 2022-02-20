@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace proto1
+namespace towerdefense
 {
     public class followPath : MonoBehaviour
     {
