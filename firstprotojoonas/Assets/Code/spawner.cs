@@ -18,10 +18,15 @@ namespace towerdefense
 
 		private float timer;
 
+		[SerializeField]
+		private int spawnAmount;
+		private int spawnIndex;
+
 		private GameObject spawnedObject;
 
 		void Start()
-		{
+		{	
+			spawnIndex = spawnAmount - 1;
 			timer = spawnTime + Random.Range(-timerOffset, timerOffset);
 		}
 
@@ -34,6 +39,12 @@ namespace towerdefense
 			if (timer <= 0)
 			{
 				Spawn();
+				spawnAmount--;
+				if(spawnIndex > 0)
+				{
+					timer = spawnTime + Random.Range(-timerOffset, timerOffset);
+					spawnIndex--;
+				}
 			}
 		}
 

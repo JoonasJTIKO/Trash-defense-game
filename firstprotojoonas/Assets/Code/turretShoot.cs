@@ -6,26 +6,26 @@ namespace towerdefense
 {
     public class turretShoot : MonoBehaviour
     {
-        public Transform enemy;
-        public GameObject projectile;
-        Vector2 direction;
+        [SerializeField]
+        private Transform enemy;
+        [SerializeField]
+        private GameObject projectile;
+        private Vector2 direction;
         private float timeBtwShots = 0;
-        public float fireRate;
-        public float range;
+        [SerializeField]
+        private float fireRate;
+        [SerializeField]
+        private float range;
         List<GameObject> NearGameobjects = new List<GameObject>();
         GameObject closestObject;
         private float oldDistance = 9999;
     
-        public GameObject object1, object2;     // Player ship and turret, respectively
-        public float Distance_; // shows distance between 2 objects in unity
+        [SerializeField]
+        private GameObject object1, object2;     // Player ship and turret, respectively
+        private float Distance_; // shows distance between 2 objects in unity
 
-        public float force;
-    
-        // Start is called before the first frame update
-        void Start()
-        {
-            
-        }
+        [SerializeField]
+        private float force;
     
         // Update is called once per frame
         void Update()
