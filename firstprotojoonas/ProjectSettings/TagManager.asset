@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Cardboard
+  - Bio
+  - Trash
   layers:
   - Default
   - TransparentFX
