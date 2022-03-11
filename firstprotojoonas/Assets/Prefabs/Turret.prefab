@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5115742538752015170}
   - component: {fileID: 5115742538752015171}
   - component: {fileID: 5115742538752015182}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,6 @@ MonoBehaviour:
   range: 6
   object1: {fileID: 0}
   object2: {fileID: 5115742538752015169}
-  Distance_: 0
   force: 300
 --- !u!58 &5115742538752015171
 CircleCollider2D:
