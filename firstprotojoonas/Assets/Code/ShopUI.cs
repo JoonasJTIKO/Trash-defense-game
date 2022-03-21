@@ -13,7 +13,10 @@ namespace towerdefense
         {
             foreach (GameObject placePoint in placePoints)
             {
-                placePoint.SetActive(false);
+                if(placePoint != null)
+                {
+                    placePoint.SetActive(false);
+                }
             } 
         }
     }

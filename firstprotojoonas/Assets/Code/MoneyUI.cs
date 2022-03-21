@@ -22,5 +22,11 @@ namespace towerdefense
             nameText.text = (currentMoney - amount).ToString();
             currentMoney = currentMoney - amount;
         }
+
+        public void AddMoney(float amount)
+        {
+            nameText.text = (currentMoney + amount).ToString();
+            currentMoney = currentMoney + amount;
+        }
     }
 }

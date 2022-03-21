@@ -51,7 +51,7 @@ namespace towerdefense
                 {    
                     GameObject bulletIns = Instantiate(projectile, transform.position, Quaternion.identity);
                     bulletIns.GetComponent<Rigidbody2D>().AddForce(direction * force);
-                    timeBtwShots = fireRate;
+                    timeBtwShots = 1 / fireRate;
                 }
                 else
                 {

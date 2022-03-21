@@ -12,11 +12,14 @@ namespace towerdefense
         [SerializeField]
         private GameObject ShopUI;
 
+        private Vector3 turretPos;
+
         public void placeTurret()
         {
-            Instantiate(spawnObject, transform.position, transform.rotation);
-            Destroy(gameObject);
+            turretPos = new Vector3 (transform.position.x, transform.position.y, 0);
+            Instantiate(spawnObject, turretPos, transform.rotation);
             ShopUI.SetActive(true);
+            Destroy(this.gameObject);
             ShopUI.GetComponent<ShopUI>().DeactivatePlacePoints();
         }
     }

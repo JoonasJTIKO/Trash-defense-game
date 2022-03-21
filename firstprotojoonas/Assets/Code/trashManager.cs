@@ -8,10 +8,12 @@ namespace towerdefense
     {
         public enum TrashTypeList { Cardboard, Bio }
         public TrashTypeList trashType;
+
+        private MoneyUI ui;
         // Start is called before the first frame update
         void Start()
         {
-
+            ui = FindObjectOfType<MoneyUI>();
         }
 
         // Update is called once per frame
@@ -23,7 +25,7 @@ namespace towerdefense
         {
             if (col.gameObject.tag == this.trashType.ToString())
             {
-                //Lisää massii
+                ui.AddMoney(50);
                 Destroy(this.gameObject);
             }
             else if (col.gameObject.tag == "Player")

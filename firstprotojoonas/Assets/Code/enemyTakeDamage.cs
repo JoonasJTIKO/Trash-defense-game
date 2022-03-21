@@ -8,6 +8,14 @@ namespace towerdefense
     {
         [SerializeField]
         private int health;
+
+        private EnemyCounter enemyCounter;
+
+        void Awake()
+        {
+            enemyCounter = FindObjectOfType<EnemyCounter>();
+        }
+
         void OnCollisionEnter2D(Collision2D col)
         {
             if(col.gameObject.tag == "Bullet")
@@ -15,6 +23,7 @@ namespace towerdefense
                 health--;
                 if(health == 0)
                 {
+                    enemyCounter.RemoveEnemy();
                     Destroy(this.gameObject);
                 }
             }
