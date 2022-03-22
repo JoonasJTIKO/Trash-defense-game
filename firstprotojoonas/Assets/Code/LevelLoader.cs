@@ -85,7 +85,6 @@ namespace towerdefense
 
                     break;
                 case LoadingState.InProgress:
-                    loadingScene = scene;
                     foreach (GameObject item in loadingScene.GetRootGameObjects())
                     {
                         Fader fader = item.GetComponentInChildren<Fader>();
@@ -115,6 +114,7 @@ namespace towerdefense
         private IEnumerator ContinueLoad(float waitTime)
         {
             yield return new WaitForSeconds(waitTime);
+            SceneManager.UnloadSceneAsync(originalScene);
             SceneManager.LoadSceneAsync(nextSceneName, LoadSceneMode.Additive);
             state = LoadingState.InProgress;
         }    

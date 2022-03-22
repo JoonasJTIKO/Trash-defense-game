@@ -9,7 +9,7 @@ namespace towerdefense
     {
         [SerializeField]
         private string sceneName;
-        private void OnTriggerEnter2D(Collider2D other)
+        public void LoadNextLevel()
         {
             LevelLoader.Current.LoadLevel(sceneName);
         }
