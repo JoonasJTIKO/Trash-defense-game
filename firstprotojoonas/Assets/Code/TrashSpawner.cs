@@ -14,8 +14,14 @@ namespace towerdefense
         public GameObject bioPrefab;
         void Start()
         {
-            for (int i = 0; i < cardboardAmount; i++){
-                Instantiate(cardBoardPrefab, new Vector3(Random.Range(-4.5f, 4.5f),Random.Range(-4.5f, 4.5f),1), Quaternion.identity);
+            Invoke("spawnTrash", 1.5f);
+        }
+
+        void spawnTrash()
+        {
+            for (int i = 0; i < cardboardAmount; i++)
+            {
+                Instantiate(cardBoardPrefab, new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity);
             }
         }
 

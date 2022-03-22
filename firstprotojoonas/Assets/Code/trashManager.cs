@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,18 +16,13 @@ namespace towerdefense
         {
             ui = FindObjectOfType<MoneyUI>();
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
         void OnTriggerEnter2D(Collider2D col)
         {
             if (col.gameObject.tag == this.trashType.ToString())
             {
                 ui.AddMoney(50);
                 Destroy(this.gameObject);
+                checkForTrashLeft();
             }
             else if (col.gameObject.tag == "Player")
             {
@@ -37,6 +33,17 @@ namespace towerdefense
                 //EI Massiii
                 Debug.Log("Wrong bin idiot");
                 Destroy(this.gameObject);
+                checkForTrashLeft();
+            }
+        }
+
+        private void checkForTrashLeft()
+        {
+            Debug.Log("ASDASD123");
+            if (GameObject.FindGameObjectsWithTag("Trash").Length == 1)
+            {
+                Debug.Log("ASDASD");
+                FindObjectOfType<SceneChanger>().LoadNextLevel();
             }
         }
     }
