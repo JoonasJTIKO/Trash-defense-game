@@ -10,6 +10,9 @@ namespace towerdefense
 		[SerializeField, Tooltip("The time after which an object is spawned (in seconds)")]
 		private float spawnTime;
 
+		[SerializeField]
+		private float initialWait;
+
 		[SerializeField, Tooltip("A random offset for the spawn timer (in seconds)")]
 		private float timerOffset;
 
@@ -27,7 +30,7 @@ namespace towerdefense
 		void Start()
 		{	
 			spawnIndex = spawnAmount - 1;
-			timer = spawnTime + Random.Range(-timerOffset, timerOffset);
+			timer = initialWait + Random.Range(-timerOffset, timerOffset);
 		}
 
 		void Update()
@@ -46,12 +49,6 @@ namespace towerdefense
 					spawnIndex--;
 				}
 			}
-		}
-
-		private void DoDestroy()
-		{
-			Destroy(spawnedObject);
-			spawnedObject = null;
 		}
 
 		private void OnValidate()
