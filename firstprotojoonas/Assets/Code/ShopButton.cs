@@ -11,12 +11,15 @@ namespace towerdefense
         [SerializeField]
         private float price;
 
-        [SerializeField]
         private MoneyUI ui;
 
         [SerializeField]
         private TMP_Text priceText;
 
+        void Start()
+        {
+            ui = FindObjectOfType<MoneyUI>();
+        }
         void Update()
         {
             priceText.text = price.ToString();
