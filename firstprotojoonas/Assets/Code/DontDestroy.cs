@@ -6,9 +6,18 @@ namespace towerdefense
 {
     public class DontDestroy : MonoBehaviour
     {
+        public static DontDestroy instance;
         void Awake()
         {
-            DontDestroyOnLoad(this.gameObject);
+            if (instance == null) 
+            {
+                instance = this;
+            } else if (instance != this)
+            {
+                Destroy (gameObject);
+            }
+ 
+            DontDestroyOnLoad (gameObject);
         }
     }
 }
