@@ -270,7 +270,6 @@ GameObject:
   m_Component:
   - component: {fileID: 44985710}
   - component: {fileID: 44985709}
-  - component: {fileID: 44985711}
   m_Layer: 0
   m_Name: endGame
   m_TagString: Untagged
@@ -306,19 +305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &44985711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44985708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6285e7d9b017e74faa0c2aa1430a30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Playermovement
 --- !u!1 &66659950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 400
-  ui: {fileID: 898394472}
   priceText: {fileID: 1012739476}
 --- !u!1 &513387525
 GameObject:
@@ -5208,7 +5193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 300
-  ui: {fileID: 898394472}
   priceText: {fileID: 1765008441}
 --- !u!1 &1171520034
 GameObject:
@@ -5379,6 +5363,8 @@ GameObject:
   - component: {fileID: 1294738790}
   - component: {fileID: 1294738789}
   - component: {fileID: 1294738788}
+  - component: {fileID: 1294738791}
+  - component: {fileID: 1294738792}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -5449,7 +5435,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1294738789}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1294738791}
+        m_TargetAssemblyTypeName: towerdefense.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Towerphase
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1294738792}
+        m_TargetAssemblyTypeName: towerdefense.ResetScene, Assembly-CSharp
+        m_MethodName: resetScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1294738789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5488,6 +5498,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294738786}
   m_CullTransparentMesh: 1
+--- !u!114 &1294738791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294738786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e86b27a3df12442afdf43b4f2e92db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1294738792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294738786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3f2ecd593a9c0468c4eb114c8f674d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1330031720
 GameObject:
   m_ObjectHideFlags: 0
@@ -8210,6 +8244,7 @@ GameObject:
   - component: {fileID: 2042055509}
   - component: {fileID: 2042055508}
   - component: {fileID: 2042055507}
+  - component: {fileID: 2042055510}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -8280,7 +8315,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2042055508}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2042055510}
+        m_TargetAssemblyTypeName: towerdefense.SceneChanger, Assembly-CSharp
+        m_MethodName: LoadNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2042055508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8319,6 +8366,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042055505}
   m_CullTransparentMesh: 1
+--- !u!114 &2042055510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042055505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6285e7d9b017e74faa0c2aa1430a30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Playermovement
 --- !u!1 &2057678953
 GameObject:
   m_ObjectHideFlags: 0

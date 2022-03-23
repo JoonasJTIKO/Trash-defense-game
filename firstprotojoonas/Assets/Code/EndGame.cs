@@ -32,7 +32,7 @@ namespace towerdefense
                 winText.SetActive(true);
             }
             //testejä, pitää vielä joko tehdä ajastin tai nappi scenen vaihtoa ennen
-            sceneChanger.LoadNextLevel();
+            // sceneChanger.LoadNextLevel();
         }
     }
 }
