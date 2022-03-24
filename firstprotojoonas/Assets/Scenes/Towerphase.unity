@@ -195,6 +195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1598253328}
 --- !u!212 &19749179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -258,7 +260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &44985708
 GameObject:
@@ -303,7 +305,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &66659950
 GameObject:
@@ -377,6 +379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 2081151044}
 --- !u!212 &66659954
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -440,7 +444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &132616449
 GameObject:
@@ -886,7 +890,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &153526830
 MonoBehaviour:
@@ -1092,6 +1096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 729297647}
 --- !u!212 &282861898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1155,7 +1161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294494119
 GameObject:
@@ -1665,6 +1671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1365938078}
 --- !u!212 &384948921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1802,6 +1810,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1677925890}
 --- !u!212 &386669133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1865,7 +1875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442620369
 GameObject:
@@ -2231,6 +2241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1347915827}
 --- !u!212 &513387529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2292,10 +2304,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.02, y: 1.31, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1365938083}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &515905098
 GameObject:
@@ -2369,6 +2380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 635698521}
 --- !u!212 &515905102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2432,7 +2445,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -2693,6 +2706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 515905098}
 --- !u!212 &635698525
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2756,7 +2771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &638479692
 GameObject:
@@ -2830,6 +2845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1970539279}
 --- !u!212 &638479696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2893,7 +2910,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &652602543
 GameObject:
@@ -2967,6 +2984,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1502131736}
 --- !u!212 &652602547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3315,6 +3334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 282861894}
 --- !u!212 &729297651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3378,7 +3399,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733131802
 GameObject:
@@ -3586,6 +3607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 750643854}
 --- !u!212 &742285066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3723,6 +3746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 742285062}
 --- !u!212 &750643858
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3967,7 +3992,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &823774707
 MonoBehaviour:
@@ -5563,7 +5588,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347915827
 GameObject:
@@ -5637,6 +5662,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 513387525}
 --- !u!212 &1347915831
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5700,7 +5727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1365938078
 GameObject:
@@ -5774,6 +5801,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 384948917}
 --- !u!212 &1365938082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5833,11 +5862,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365938078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03000021, y: -2.78, z: 0}
+  m_LocalPosition: {x: 6.05, y: -1.47, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 513387530}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420353418
 GameObject:
@@ -6096,7 +6125,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478246692
 GameObject:
@@ -6209,6 +6238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 2134736077}
 --- !u!61 &1478246697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6373,6 +6404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 652602543}
 --- !u!114 &1502131738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6688,6 +6721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 19749175}
 --- !u!212 &1598253332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6751,7 +6786,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1638673825
 GameObject:
@@ -6951,6 +6986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 386669129}
 --- !u!212 &1677925894
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7014,7 +7051,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765008439
 GameObject:
@@ -8167,6 +8204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 638479692}
 --- !u!212 &1970539283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8230,7 +8269,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2042055505
 GameObject:
@@ -8511,7 +8550,7 @@ RectTransform:
   - {fileID: 789299957}
   - {fileID: 1921706075}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8590,6 +8629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 66659950}
 --- !u!212 &2081151048
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8653,7 +8694,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099399700
 GameObject:
@@ -8840,6 +8881,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   ShopUI: {fileID: 263823641}
+  pairPlacePoints:
+  - {fileID: 1478246692}
 --- !u!212 &2134736081
 SpriteRenderer:
   m_ObjectHideFlags: 0

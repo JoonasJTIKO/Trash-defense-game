@@ -47,6 +47,7 @@ namespace towerdefense
                 Vector2 enemyPos = enemy.position;
                 direction = enemyPos - (Vector2)transform.position;
                 Distance_ = Vector2.Distance(object1.transform.position, object2.transform.position);
+                transform.up = direction;
                 if(Distance_ < range && timeBtwShots <= 0 )
                 {    
                     GameObject bulletIns = Instantiate(projectile, transform.position, Quaternion.identity);
