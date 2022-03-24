@@ -66,7 +66,7 @@ namespace towerdefense
         void OnTriggerEnter2D(Collider2D col)
         {
             Debug.Log(col.gameObject.tag);
-            if (col.gameObject.tag == "Enemy")
+            if(col.gameObject.tag == "Enemy")
             {
                 Debug.Log("detected");
                 NearGameobjects.Add(col.gameObject);
@@ -74,10 +74,14 @@ namespace towerdefense
         }
         void OnTriggerExit2D(Collider2D col)
         {
-            if (col.gameObject.tag == "Enemy")
+            if(col.gameObject.tag == "Enemy")
             {
                 Debug.Log("undetected");
                 NearGameobjects.Remove(col.gameObject);
+                if(col.gameObject == closestObject)
+                {
+                    closestObject = null;
+                }
             }
         }
     }
