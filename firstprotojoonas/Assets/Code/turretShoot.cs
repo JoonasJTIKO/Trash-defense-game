@@ -30,13 +30,16 @@ namespace towerdefense
         // Update is called once per frame
         void Update()
         {
-            foreach (GameObject g in NearGameobjects)
+            if(closestObject == null)
             {
-                float dist = Vector3.Distance(this.gameObject.transform.position, g.transform.position);
-                if (dist < oldDistance)
+                foreach (GameObject g in NearGameobjects)
                 {
-                    closestObject = g;
-                    oldDistance = dist;
+                    float dist = Vector3.Distance(this.gameObject.transform.position, g.transform.position);
+                    if (dist < oldDistance)
+                    {
+                        closestObject = g;
+                        oldDistance = dist;
+                    }
                 }
             }
             oldDistance = 9999;
