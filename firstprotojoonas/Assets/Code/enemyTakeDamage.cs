@@ -27,6 +27,15 @@ namespace towerdefense
                     Destroy(this.gameObject);
                 }
             }
+            if(col.gameObject.tag == "Melee")
+            {
+                health = health - 2;
+                if(health == 0)
+                {
+                    enemyCounter.RemoveEnemy();
+                    Destroy(this.gameObject);
+                }
+            }
         }
     }
 }

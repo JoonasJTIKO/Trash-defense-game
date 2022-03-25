@@ -9,6 +9,7 @@ TagManager:
   - Cardboard
   - Bio
   - Trash
+  - Melee
   layers:
   - Default
   - TransparentFX
