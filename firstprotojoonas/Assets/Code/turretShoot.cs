@@ -62,6 +62,10 @@ namespace towerdefense
                     timeBtwShots -= Time.deltaTime;
                 }
             }
+            else
+            {
+                timeBtwShots -= Time.deltaTime;
+            }
         }
         void OnTriggerEnter2D(Collider2D col)
         {

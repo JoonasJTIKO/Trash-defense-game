@@ -725,6 +725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoffeeCup
       objectReference: {fileID: 0}
+    - target: {fileID: 6059848134534779426, guid: db942505b92cc9f419cf5ea8fa613a59, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6059848134534779454, guid: db942505b92cc9f419cf5ea8fa613a59, type: 3}
       propertyPath: m_RootOrder
       value: 3
