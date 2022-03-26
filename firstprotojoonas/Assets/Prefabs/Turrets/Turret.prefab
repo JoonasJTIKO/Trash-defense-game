@@ -100,7 +100,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   projectile: {fileID: 1817609888514052528, guid: 921d39273c4887b40a577cbdf4dbf0a2, type: 3}
   fireRate: 1
-  range: 6
+  range: 3
   object1: {fileID: 0}
   object2: {fileID: 5115742538752015169}
   force: 300
@@ -119,7 +119,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 3
 --- !u!50 &5115742538752015182
 Rigidbody2D:
   serializedVersion: 4

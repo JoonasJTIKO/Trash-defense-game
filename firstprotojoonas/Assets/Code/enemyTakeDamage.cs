@@ -29,7 +29,7 @@ namespace towerdefense
             }
             if(col.gameObject.tag == "Melee")
             {
-                health = health - 2;
+                health = health - 3;
                 if(health == 0)
                 {
                     enemyCounter.RemoveEnemy();
