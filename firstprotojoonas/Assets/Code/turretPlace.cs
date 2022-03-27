@@ -10,6 +10,9 @@ namespace towerdefense
         private GameObject spawnObject;
 
         [SerializeField]
+        private GameObject turretBase;
+
+        [SerializeField]
         private GameObject ShopUI;
 
         [SerializeField]
@@ -20,6 +23,7 @@ namespace towerdefense
         public void placeTurret()
         {
             turretPos = new Vector3 (transform.position.x, transform.position.y, 0);
+            Instantiate(turretBase, turretPos, transform.rotation);
             Instantiate(spawnObject, turretPos, transform.rotation);
             ShopUI.SetActive(true);
             Destroy(this.gameObject);
