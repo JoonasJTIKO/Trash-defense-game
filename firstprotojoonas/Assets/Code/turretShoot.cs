@@ -30,6 +30,7 @@ namespace towerdefense
         // Update is called once per frame
         void Update()
         {
+            Debug.Log(timeBtwShots);
             if(closestObject == null)
             {
                 foreach (GameObject g in NearGameobjects)
@@ -51,8 +52,9 @@ namespace towerdefense
                 direction = enemyPos - (Vector2)transform.position;
                 Distance_ = Vector2.Distance(object1.transform.position, object2.transform.position);
                 transform.up = direction;
-                if(Distance_ < range && timeBtwShots <= 0 )
+                if(timeBtwShots <= 0 )
                 {    
+                    Debug.Log("shoot");
                     GameObject bulletIns = Instantiate(projectile, transform.position, Quaternion.identity);
                     bulletIns.GetComponent<Rigidbody2D>().AddForce(direction * force);
                     timeBtwShots = 1 / fireRate;
@@ -72,7 +74,6 @@ namespace towerdefense
             Debug.Log(col.gameObject.tag);
             if(col.gameObject.tag == "Enemy")
             {
-                Debug.Log("detected");
                 NearGameobjects.Add(col.gameObject);
             }
         }
@@ -80,7 +81,6 @@ namespace towerdefense
         {
             if(col.gameObject.tag == "Enemy")
             {
-                Debug.Log("undetected");
                 NearGameobjects.Remove(col.gameObject);
                 if(col.gameObject == closestObject)
                 {
