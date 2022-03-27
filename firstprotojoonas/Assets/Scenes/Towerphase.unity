@@ -899,7 +899,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 324902709}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1399,6 +1399,7 @@ MonoBehaviour:
   placePoints:
   - {fileID: 170285702}
   - {fileID: 566579179}
+  - {fileID: 2112513923}
 --- !u!1 &282861894
 GameObject:
   m_ObjectHideFlags: 0

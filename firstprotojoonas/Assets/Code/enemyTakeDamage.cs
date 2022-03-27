@@ -21,7 +21,7 @@ namespace towerdefense
             if(col.gameObject.tag == "Bullet")
             {
                 health--;
-                if(health == 0)
+                if(health <= 0)
                 {
                     enemyCounter.RemoveEnemy();
                     Destroy(this.gameObject);
@@ -29,8 +29,8 @@ namespace towerdefense
             }
             if(col.gameObject.tag == "Melee")
             {
-                health = health - 3;
-                if(health == 0)
+                health = health - 5;
+                if(health <= 0)
                 {
                     enemyCounter.RemoveEnemy();
                     Destroy(this.gameObject);
