@@ -14,7 +14,8 @@ namespace towerdefense
         public GameObject bioPrefab;
         void Start()
         {
-            Invoke("spawnTrash", 1.5f);
+            Invoke("spawnTrash", 0.4f);
+            
         }
 
         void spawnTrash()
@@ -28,7 +29,18 @@ namespace towerdefense
         // Update is called once per frame
         void Update()
         {
-        
+            checkForTrashLeft();
+        }
+
+        private void checkForTrashLeft()
+        {
+            Debug.Log("ASDASD123");
+            if (GameObject.FindGameObjectsWithTag("Trash").Length == 0)
+            {
+                Debug.Log("ASDASD");
+                FindObjectOfType<SceneChanger>().LoadNextLevel();
+                Destroy(this.gameObject);
+            }
         }
     }
 }

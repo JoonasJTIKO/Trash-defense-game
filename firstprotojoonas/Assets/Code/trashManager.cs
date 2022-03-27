@@ -22,7 +22,6 @@ namespace towerdefense
             {
                 ui.AddMoney(50);
                 Destroy(this.gameObject);
-                checkForTrashLeft();
             }
             else if (col.gameObject.tag == "Player")
             {
@@ -33,17 +32,6 @@ namespace towerdefense
                 //EI Massiii
                 Debug.Log("Wrong bin idiot");
                 Destroy(this.gameObject);
-                checkForTrashLeft();
-            }
-        }
-
-        private void checkForTrashLeft()
-        {
-            Debug.Log("ASDASD123");
-            if (GameObject.FindGameObjectsWithTag("Trash").Length == 1)
-            {
-                Debug.Log("ASDASD");
-                FindObjectOfType<SceneChanger>().LoadNextLevel();
             }
         }
     }
