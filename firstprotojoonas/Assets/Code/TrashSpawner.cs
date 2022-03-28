@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace towerdefense
 {
@@ -29,18 +30,17 @@ namespace towerdefense
         // Update is called once per frame
         void Update()
         {
-            checkForTrashLeft();
+            // checkForTrashLeft();
         }
 
-        private void checkForTrashLeft()
-        {
-            Debug.Log("ASDASD123");
-            if (GameObject.FindGameObjectsWithTag("Trash").Length == 0)
-            {
-                Debug.Log("ASDASD");
-                FindObjectOfType<SceneChanger>().LoadNextLevel();
-                Destroy(this.gameObject);
-            }
-        }
+        // private void checkForTrashLeft()
+        // {
+        //     if (GameObject.FindGameObjectsWithTag("Trash").Length == 0)
+        //     {
+        //         Debug.Log("ASDASD");
+        //         SceneManager.UnloadSceneAsync("Playermovement");
+        //         Destroy(this.gameObject);
+        //     }
+        // }
     }
 }

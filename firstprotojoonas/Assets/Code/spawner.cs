@@ -19,6 +19,9 @@ namespace towerdefense
 		[SerializeField, Tooltip("A reference to the prefab we want to create copies from")]
 		private GameObject prefab;
 
+		[SerializeField]
+		private GameObject parentTest;
+
 		private float timer;
 
 		[SerializeField]
@@ -62,6 +65,7 @@ namespace towerdefense
 		private void Spawn()
 		{
 			spawnedObject = Instantiate(prefab, transform.position, transform.rotation);
+			spawnedObject.transform.SetParent(parentTest.transform);
 		}
 	}
 }

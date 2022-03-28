@@ -13,15 +13,18 @@ namespace towerdefense
         [SerializeField]
         private float speed = 1;
 
+        private GameObject parentTest2;
+
         private int currentWaypoint = 0;
         // Start is called before the first frame update
         
         void Start()
         {
+            parentTest2 = GameObject.Find("Everything");
             transform.position = waypoints[currentWaypoint].transform.position;
             foreach (Transform child in waypoints)
             {
-                child.SetParent(null, true);
+                child.SetParent(parentTest2.transform, true);
             }
         }
 
