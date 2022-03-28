@@ -11,8 +11,11 @@ namespace towerdefense
 
         private EndGame endGame;
 
-        void Start()
+        private EnemyCounter enemyCounter;
+
+        void Awake()
         {
+            enemyCounter = FindObjectOfType<EnemyCounter>();
             endGame = FindObjectOfType<EndGame>();
         }
 
@@ -24,6 +27,7 @@ namespace towerdefense
                 Debug.Log("enemy detected");
                 Destroy(col.gameObject);
                 enemyCount--;
+                enemyCounter.RemoveEnemy();
                 if(enemyCount == 0)
                 {
                     endGame.Lose();

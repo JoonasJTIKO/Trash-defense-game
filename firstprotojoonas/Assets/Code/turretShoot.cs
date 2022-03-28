@@ -19,6 +19,7 @@ namespace towerdefense
         List<GameObject> NearGameobjects = new List<GameObject>();
         GameObject closestObject;
         private float oldDistance = 9999;
+        private Animator anim;
     
         [SerializeField]
         private GameObject object1, object2;     // Player ship and turret, respectively
@@ -26,6 +27,11 @@ namespace towerdefense
 
         [SerializeField]
         private float force;
+
+        void Awake()
+        {
+            anim = GetComponent<Animator>();
+        }
     
         // Update is called once per frame
         void Update()
@@ -54,13 +60,20 @@ namespace towerdefense
                 transform.up = direction;
                 if(timeBtwShots <= 0 )
                 {    
-                    Debug.Log("shoot");
+                    if(anim != null)
+                    {
+                        anim.SetBool("Shoot", true);
+                    }
                     GameObject bulletIns = Instantiate(projectile, transform.position, Quaternion.identity);
                     bulletIns.GetComponent<Rigidbody2D>().AddForce(direction * force);
                     timeBtwShots = 1 / fireRate;
                 }
                 else
                 {
+                    if(anim != null)
+                    {
+                        anim.SetBool("Shoot", false);
+                    }
                     timeBtwShots -= Time.deltaTime;
                 }
             }
