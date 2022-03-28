@@ -11,13 +11,24 @@ namespace towerdefense
 
         private GameObject everything;
 
+        [SerializeField]
+        private bool unloadScene;
+
         void Start()
         {
             everything = GameObject.Find("Everything");
         }
         public void LoadScene(string name)
         {
-            SceneManager.LoadScene(name, LoadSceneMode.Additive);
+            if (unloadScene)
+            {
+                SceneManager.LoadScene(name);
+                return;
+            } 
+            else 
+            {
+                SceneManager.LoadScene(name, LoadSceneMode.Additive);
+            }
             everything.SetActive(false);
             if (currentScene == 0)
             {

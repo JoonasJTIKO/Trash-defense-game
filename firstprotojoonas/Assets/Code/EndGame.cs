@@ -11,12 +11,6 @@ namespace towerdefense
 
         [SerializeField]
         private GameObject winText;
-        private SceneChanger sceneChanger;
-        
-        void Start()
-        {
-            sceneChanger = FindObjectOfType<SceneChanger>();
-        }
         public void Lose()
         {
             if(winText.activeSelf == false)
@@ -31,8 +25,6 @@ namespace towerdefense
             {
                 winText.SetActive(true);
             }
-            //testejä, pitää vielä joko tehdä ajastin tai nappi scenen vaihtoa ennen
-            // sceneChanger.LoadNextLevel();
         }
     }
 }
