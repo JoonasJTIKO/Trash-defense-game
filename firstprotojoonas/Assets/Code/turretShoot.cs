@@ -36,7 +36,6 @@ namespace towerdefense
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(timeBtwShots);
             if(closestObject == null)
             {
                 foreach (GameObject g in NearGameobjects)

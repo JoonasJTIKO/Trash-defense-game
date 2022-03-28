@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 3
+  rewardAmount: 75
 --- !u!50 &6059848134534779455
 Rigidbody2D:
   serializedVersion: 4

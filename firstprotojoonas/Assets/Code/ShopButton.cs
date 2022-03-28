@@ -27,6 +27,10 @@ namespace towerdefense
             {
                 gameObject.GetComponent<Button>().enabled = false;
             }
+            if(price <= ui.CurrentMoney && gameObject.GetComponent<Button>().enabled == false)
+            {
+                gameObject.GetComponent<Button>().enabled = true;
+            }
         }
     }
 }

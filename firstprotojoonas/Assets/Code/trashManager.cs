@@ -12,6 +12,9 @@ namespace towerdefense
 
         private MoneyUI ui;
 
+        [SerializeField]
+        private int rewardAmount;
+
         static bool alreadyAttached = false;
         // Start is called before the first frame update
         void Start()
@@ -22,7 +25,7 @@ namespace towerdefense
         {
             if (col.gameObject.tag == this.trashType.ToString())
             {
-                ui.AddMoney(50);
+                ui.AddMoney(rewardAmount);
                 Destroy(this.gameObject);
             }
             else if (col.gameObject.tag == "Player" && !alreadyAttached)
