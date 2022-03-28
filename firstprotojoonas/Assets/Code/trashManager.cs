@@ -7,7 +7,7 @@ namespace towerdefense
 {
     public class trashManager : MonoBehaviour
     {
-        public enum TrashTypeList { Cardboard, Bio }
+        public enum TrashTypeList { Cardboard, Bio, Plastic, Paper }
         public TrashTypeList trashType;
 
         private MoneyUI ui;
