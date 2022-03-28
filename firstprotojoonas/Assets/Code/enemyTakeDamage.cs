@@ -16,25 +16,24 @@ namespace towerdefense
             enemyCounter = FindObjectOfType<EnemyCounter>();
         }
 
+        void Update()
+        {
+            if (health <= 0)
+            {
+                enemyCounter.RemoveEnemy();
+                Destroy(this.gameObject);
+            }
+        }
+
         void OnCollisionEnter2D(Collision2D col)
         {
-            if(col.gameObject.tag == "Bullet")
+            if (col.gameObject.tag == "Bullet")
             {
                 health--;
-                if(health <= 0)
-                {
-                    enemyCounter.RemoveEnemy();
-                    Destroy(this.gameObject);
-                }
             }
-            if(col.gameObject.tag == "Melee")
+            if (col.gameObject.tag == "Melee")
             {
                 health--;
-                if(health <= 0)
-                {
-                    enemyCounter.RemoveEnemy();
-                    Destroy(this.gameObject);
-                }
             }
         }
     }
