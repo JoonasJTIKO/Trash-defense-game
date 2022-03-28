@@ -28,7 +28,6 @@ namespace towerdefense
 
         void Update()
         {
-            Debug.Log(currentScene);
             if (currentScene == 1)
             {
                 checkForTrashLeft();

@@ -11,6 +11,8 @@ namespace towerdefense
         public TrashTypeList trashType;
 
         private MoneyUI ui;
+
+        static bool alreadyAttached = false;
         // Start is called before the first frame update
         void Start()
         {
@@ -23,16 +25,22 @@ namespace towerdefense
                 ui.AddMoney(50);
                 Destroy(this.gameObject);
             }
-            else if (col.gameObject.tag == "Player")
+            else if (col.gameObject.tag == "Player" && !alreadyAttached)
             {
                 this.transform.parent = col.transform;
+                alreadyAttached = true;
             }
-            else if (col.gameObject.tag != "Trash")
+            else if (col.gameObject.tag != "Trash" && col.gameObject.tag != "Player")
             {
                 //EI Massiii
                 Debug.Log("Wrong bin idiot");
                 Destroy(this.gameObject);
             }
+        }
+
+        void OnDestroy()
+        {
+            alreadyAttached = false;
         }
     }
 }
