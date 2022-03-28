@@ -21,7 +21,15 @@ namespace towerdefense{
             if (Input.GetAxis("Fire1") > 0f) {
                 lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 moving = true;
-                transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
+                if (transform.position.x < lastClickedPos.x)
+                {
+                    transform.localScale = new Vector2(-1.5f, transform.localScale.y);
+                } 
+                else
+                {
+                    transform.localScale = new Vector2(1.5f, transform.localScale.y);
+                }
+                // transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
             }
 
             if (moving && (Vector2)transform.position != lastClickedPos) {
