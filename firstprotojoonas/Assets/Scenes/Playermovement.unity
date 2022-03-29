@@ -160,6 +160,7 @@ MonoBehaviour:
   plasticPrefab: {fileID: 6059848134534779426, guid: 5551d241eb652d5459ad9a5200afe928, type: 3}
   paperAmount: 3
   paperPrefab: {fileID: 6059848134534779426, guid: 11f352dcccb21f0458f04171069de745, type: 3}
+  spawnInterval: 0.2
 --- !u!4 &62720481
 Transform:
   m_ObjectHideFlags: 0
