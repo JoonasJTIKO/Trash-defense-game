@@ -7,17 +7,11 @@ namespace towerdefense
     public class ShopUI : MonoBehaviour
     {
         [SerializeField]
-        List<GameObject> placePoints = new List<GameObject>();
+        private GameObject placePoints;
 
         public void DeactivatePlacePoints()
         {
-            foreach (GameObject placePointGroup in placePoints)
-            {
-                if(placePointGroup != null)
-                {
-                    placePointGroup.SetActive(false);
-                }
-            } 
+            placePoints.SetActive(false);
         }
     }
 }

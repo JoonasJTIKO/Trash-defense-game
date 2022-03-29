@@ -6,16 +6,16 @@ namespace towerdefense
 {
     public class EnemyCounter : MonoBehaviour
     {
-        [SerializeField, Tooltip("this must be the exact amount of enemies that will be spawned in the round")]
+        [SerializeField]
         private int maxEnemyCount;
-        private int originalMaxEnemyCount;
-
         private EndGame endGame;
+        private spawner spawner;
 
         void Start()
         {
-            originalMaxEnemyCount = maxEnemyCount;
+            spawner = GetComponent<spawner>();
             endGame = FindObjectOfType<EndGame>();
+            maxEnemyCount = spawner.spawnAmount;
         }
 
         public void RemoveEnemy()
@@ -26,11 +26,10 @@ namespace towerdefense
                 endGame.Win();
             }
         }
-        
-        private void OnDisable()
+
+        private void OnEnable()
         {
-            originalMaxEnemyCount = originalMaxEnemyCount + 4;
-            maxEnemyCount = originalMaxEnemyCount;
+            maxEnemyCount = spawner.spawnAmount;
         }
     }
 }
