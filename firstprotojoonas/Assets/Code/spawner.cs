@@ -31,7 +31,7 @@ namespace towerdefense
 
 		private GameObject spawnedObject;
 
-		void Start()
+		void Awake()
 		{	
 			spawnAmount = spawnAmount * prefab.Count;
 			originalSpawnAmount = spawnAmount;

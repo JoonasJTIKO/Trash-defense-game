@@ -29,7 +29,10 @@ namespace towerdefense
 
         private void OnEnable()
         {
-            maxEnemyCount = spawner.spawnAmount;
+            if(spawner != null)
+            {
+                maxEnemyCount = spawner.spawnAmount;
+            }
         }
     }
 }
