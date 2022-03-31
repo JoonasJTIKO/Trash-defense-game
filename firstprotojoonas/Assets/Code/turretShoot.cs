@@ -83,7 +83,6 @@ namespace towerdefense
         }
         void OnTriggerEnter2D(Collider2D col)
         {
-            Debug.Log(col.gameObject.tag);
             if(col.gameObject.tag == "Enemy")
             {
                 NearGameobjects.Add(col.gameObject);

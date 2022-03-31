@@ -10,6 +10,9 @@ namespace towerdefense
         private int health;
 
         private EnemyCounter enemyCounter;
+        
+        [SerializeField]
+        private string type;
 
         void Awake()
         {
@@ -20,7 +23,7 @@ namespace towerdefense
         {
             if (health <= 0)
             {
-                enemyCounter.RemoveEnemy();
+                enemyCounter.RemoveEnemy(type);
                 Destroy(this.gameObject);
             }
         }
@@ -35,6 +38,11 @@ namespace towerdefense
             {
                 health--;
             }
+        }
+
+        public new string GetType()
+        {
+            return type;
         }
     }
 }

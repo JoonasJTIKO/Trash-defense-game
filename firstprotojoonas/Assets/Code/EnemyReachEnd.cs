@@ -21,13 +21,11 @@ namespace towerdefense
 
         void OnCollisionEnter2D(Collision2D col)
         {
-            Debug.Log("enemy reached");
             if(col.gameObject.tag == "Enemy")
             {
-                Debug.Log("enemy detected");
                 Destroy(col.gameObject);
                 enemyCount--;
-                enemyCounter.RemoveEnemy();
+                enemyCounter.RemoveEnemy(col.gameObject.GetComponent<enemyTakeDamage>().GetType());
                 if(enemyCount == 0)
                 {
                     endGame.Lose();
