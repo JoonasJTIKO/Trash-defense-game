@@ -7,7 +7,6 @@ namespace towerdefense
 {
     public class followPath : MonoBehaviour
     {
-        [SerializeField]
         private Transform[] waypoints;
 
         [SerializeField]
@@ -16,19 +15,13 @@ namespace towerdefense
         private GameObject parentTest2;
 
         private int currentWaypoint = 0;
-        // Start is called before the first frame update
         
         void Start()
         {
-            parentTest2 = GameObject.Find("Everything");
+            waypoints = GameObject.Find("Waypoints").GetComponent<WaypointList>().waypointList;
             transform.position = waypoints[currentWaypoint].transform.position;
-            foreach (Transform child in waypoints)
-            {
-                child.SetParent(parentTest2.transform, true);
-            }
         }
 
-        // Update is called once per frame
         void Update()
         {
             Move();
