@@ -21,10 +21,14 @@ namespace towerdefense
             maxEnemyCount = spawner.spawnAmount;
         }
 
-        public void RemoveEnemy(string type)
+        public void RemoveEnemy(string type, bool addDestroyed = true)
         {
             maxEnemyCount--;
-            trashUI.AddAmount(1, type);
+            if (addDestroyed)
+            {
+                trashUI.AddAmount(1, type);
+            }
+            
 
             if(maxEnemyCount == 0)
             {

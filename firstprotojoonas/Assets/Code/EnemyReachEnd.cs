@@ -11,11 +11,11 @@ namespace towerdefense
 
         private EndGame endGame;
 
+        [SerializeField]
         private EnemyCounter enemyCounter;
 
         void Awake()
         {
-            enemyCounter = FindObjectOfType<EnemyCounter>();
             endGame = FindObjectOfType<EndGame>();
         }
 
@@ -25,7 +25,7 @@ namespace towerdefense
             {
                 Destroy(col.gameObject);
                 enemyCount--;
-                enemyCounter.RemoveEnemy(col.gameObject.GetComponent<enemyTakeDamage>().GetType());
+                enemyCounter.RemoveEnemy(col.gameObject.GetComponent<enemyTakeDamage>().GetType(), false);
                 if(enemyCount == 0)
                 {
                     endGame.Lose();

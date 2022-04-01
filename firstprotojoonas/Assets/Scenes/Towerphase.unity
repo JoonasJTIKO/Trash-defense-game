@@ -855,6 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCount: 3
+  enemyCounter: {fileID: 1947016427}
 --- !u!1 &170285702
 GameObject:
   m_ObjectHideFlags: 0

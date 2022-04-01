@@ -14,9 +14,12 @@ namespace towerdefense
         [SerializeField]
         private bool unloadScene;
 
+        private TrashUI trashUI;
+
         void Start()
         {
             everything = GameObject.Find("Everything");
+            trashUI = FindObjectOfType<TrashUI>();
         }
         public void LoadScene(string name)
         {
@@ -39,6 +42,10 @@ namespace towerdefense
 
         void Update()
         {
+            if (everything == null)
+            {
+                everything = GameObject.Find("Everything");
+            }
             if (currentScene == 1)
             {
                 checkForTrashLeft();
@@ -52,6 +59,7 @@ namespace towerdefense
                 SceneManager.UnloadSceneAsync("Playermovement");
                 currentScene = 0;
                 everything.SetActive(true);
+                trashUI.Reset();
                 // Start next level
             }
         }

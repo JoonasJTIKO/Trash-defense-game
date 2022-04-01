@@ -7,19 +7,19 @@ namespace towerdefense
 {
     public class TrashUI : MonoBehaviour
     {
-        private int paperAmount;
+        public static int paperAmount;
 
         [SerializeField]
         private TMP_Text paperText;
-        private int cardboardAmount;
+        public static int cardboardAmount;
 
         [SerializeField]
         private TMP_Text cardboardText;
-        private int plasticAmount;
+        public static int plasticAmount;
 
         [SerializeField]
         private TMP_Text plasticText;
-        private int bioAmount;
+        public static int bioAmount;
 
         [SerializeField]
         private TMP_Text bioText;
@@ -29,27 +29,24 @@ namespace towerdefense
             if(type == "Cardboard")
             {
                 cardboardAmount++;
-                cardboardText.text = cardboardAmount.ToString();
             }
             else if(type == "Bio")
             {
                 bioAmount++;
-                bioText.text = bioAmount.ToString();
             }
             else if(type == "Plastic")
             {
                 plasticAmount++;
-                plasticText.text = plasticAmount.ToString();
             }
             else if(type == "Paper")
             {
                 paperAmount++;
-                paperText.text = paperAmount.ToString();
             }
             else
             {
                 Debug.Log("Enemy does not have type, or type has not been added to counter");
             }
+            this.updateText();
         }
 
         public void Reset()
@@ -58,6 +55,36 @@ namespace towerdefense
             cardboardAmount = 0;
             plasticAmount = 0;
             bioAmount = 0;
+            this.updateText();
+        }
+
+        public void reduceByOne(string type)
+        {
+            switch(type)
+            {
+                case "paper":
+                    paperAmount--;
+                    break;
+                case "cardboard":
+                    cardboardAmount--;
+                    break;
+                case "bio":
+                    bioAmount--;
+                    break;
+                case "plastic":
+                    plasticAmount--;
+                    break;
+            }
+
+            this.updateText();
+        }
+
+        private void updateText()
+        {
+            bioText.text = bioAmount.ToString();
+            plasticText.text = plasticAmount.ToString();
+            cardboardText.text = cardboardAmount.ToString();
+            paperText.text = paperAmount.ToString();
         }
     }
 }
