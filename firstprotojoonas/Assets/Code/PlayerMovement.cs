@@ -25,11 +25,13 @@ namespace towerdefense
                 moving = true;
                 if (transform.position.x < lastClickedPos.x)
                 {
-                    transform.localScale = new Vector2(-1.5f, transform.localScale.y);
+                    // transform.localScale = new Vector2(-1.5f, transform.localScale.y);
+                    this.GetComponent<SpriteRenderer>().flipX = true;
                 }
                 else
                 {
-                    transform.localScale = new Vector2(1.5f, transform.localScale.y);
+                    // transform.localScale = new Vector2(1.5f, transform.localScale.y);
+                    this.GetComponent<SpriteRenderer>().flipX = false;
                 }
                 // transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
             }

@@ -152,13 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93fe11028683c942bd5c5c39a2922ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardboardAmount: 3
   cardBoardPrefab: {fileID: 6059848134534779426, guid: db942505b92cc9f419cf5ea8fa613a59, type: 3}
-  bioAmount: 0
   bioPrefab: {fileID: 0}
-  plasticAmount: 3
   plasticPrefab: {fileID: 6059848134534779426, guid: 5551d241eb652d5459ad9a5200afe928, type: 3}
-  paperAmount: 3
   paperPrefab: {fileID: 6059848134534779426, guid: 11f352dcccb21f0458f04171069de745, type: 3}
   spawnInterval: 0.2
 --- !u!4 &62720481
@@ -3556,32 +3552,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1332167203 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1377209924223376780, guid: 3374fa51c26cece4b9aab4b37c23de18, type: 3}
-  m_PrefabInstance: {fileID: 1377209924098475048}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1332167208
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332167203}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &1895537098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3845,14 +3815,6 @@ PrefabInstance:
     - target: {fileID: 1377209924223376780, guid: 3374fa51c26cece4b9aab4b37c23de18, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377209924223376780, guid: 3374fa51c26cece4b9aab4b37c23de18, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377209924223376782, guid: 3374fa51c26cece4b9aab4b37c23de18, type: 3}
-      propertyPath: m_SortingOrder
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1377209924223376783, guid: 3374fa51c26cece4b9aab4b37c23de18, type: 3}
       propertyPath: m_RootOrder
