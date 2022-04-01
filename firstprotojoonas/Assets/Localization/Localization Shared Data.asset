@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Localization Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Localization
+  m_TableCollectionNameGuidString: 5038b21455c2d144d88ac398130b5582
+  m_Entries:
+  - m_Id: 19355262976
+    m_Key: TowerMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 707778961408
+    m_Key: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963790888960
+    m_Key: Start round
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1426552643584
+    m_Key: Game over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1659823054848
+    m_Key: You win!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1818799759360
+    m_Key: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2031274811392
+    m_Key: Continue
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1648640890645

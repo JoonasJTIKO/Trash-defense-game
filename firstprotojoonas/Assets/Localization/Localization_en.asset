@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localization_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5038b21455c2d144d88ac398130b5582, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19355262976
+    m_Localized: Select a turret
+    m_Metadata:
+      m_Items: []
+  - m_Id: 707778961408
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963790888960
+    m_Localized: Start round
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1426552643584
+    m_Localized: Game over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1659823054848
+    m_Localized: You win!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1818799759360
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2031274811392
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

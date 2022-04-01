@@ -7,7 +7,7 @@ namespace towerdefense
     public class turretPlace : MonoBehaviour
     {
         [SerializeField]
-        private GameObject spawnObject;
+        private List<GameObject> spawnObject = new List<GameObject>();
 
         [SerializeField]
         private GameObject turretBase;
@@ -16,9 +16,11 @@ namespace towerdefense
         private GameObject ShopUI;
 
         [SerializeField]
-        List<GameObject> pairPlacePoints = new List<GameObject>();
+        private GameObject StartGame;
 
         private Vector3 turretPos;
+
+        private int objectNumber;
 
         private GameObject parentObject; // Että saa everythingin alle
 
@@ -31,14 +33,16 @@ namespace towerdefense
         {
             turretPos = new Vector3 (transform.position.x, transform.position.y, 0);
             Instantiate(turretBase, turretPos, transform.rotation, parentObject.transform);
-            Instantiate(spawnObject, turretPos, transform.rotation, parentObject.transform);
+            Instantiate(spawnObject[objectNumber], turretPos, transform.rotation, parentObject.transform);
             ShopUI.SetActive(true);
+            StartGame.SetActive(true);
             Destroy(this.gameObject);
-            foreach(GameObject placePoint in pairPlacePoints)
-            {
-                Destroy(placePoint);
-            }
             ShopUI.GetComponent<ShopUI>().DeactivatePlacePoints();
+        }
+
+        public void SetObjectNumber(int number)
+        {
+            objectNumber = number;
         }
     }
 }

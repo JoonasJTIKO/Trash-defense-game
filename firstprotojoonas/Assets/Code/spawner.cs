@@ -7,32 +7,33 @@ namespace towerdefense
 	public class spawner : MonoBehaviour
 	{
 
-		[SerializeField, Tooltip("The time after which an object is spawned (in seconds)")]
+		[SerializeField]
 		private float spawnTime;
 
 		[SerializeField]
 		private float initialWait;
 
-		[SerializeField, Tooltip("A random offset for the spawn timer (in seconds)")]
+		[SerializeField]
 		private float timerOffset;
 
-		[SerializeField, Tooltip("A reference to the prefab we want to create copies from")]
-		private GameObject prefab;
+		[SerializeField]
+		private List<GameObject> prefab = new List<GameObject>();
 
 		[SerializeField]
 		private GameObject parentTest;
 
 		private float timer;
 
-		[SerializeField]
-		private int spawnAmount;
+		private int index = 0;
+		public int spawnAmount;
 		private int originalSpawnAmount;
 		private int spawnIndex;
 
 		private GameObject spawnedObject;
 
-		void Start()
+		void Awake()
 		{	
+			spawnAmount = spawnAmount * prefab.Count;
 			originalSpawnAmount = spawnAmount;
 			spawnIndex = spawnAmount - 1;
 			timer = initialWait + Random.Range(-timerOffset, timerOffset);
@@ -66,21 +67,32 @@ namespace towerdefense
 
 		private void OnDisable()
 		{
-			originalSpawnAmount++;
+			originalSpawnAmount = originalSpawnAmount + prefab.Count;
 			spawnAmount = originalSpawnAmount;
 			spawnIndex = spawnAmount - 1;
 			timer = initialWait + Random.Range(-timerOffset, timerOffset);
 			if(spawnTime > 0)
 			{
-				Debug.Log("time changed");
 				spawnTime = spawnTime - 0.25f;
 			}
 		}
 
 		private void Spawn()
 		{
-			spawnedObject = Instantiate(prefab, transform.position, transform.rotation);
+			spawnedObject = Instantiate(prefab[index], transform.position, transform.rotation);
 			spawnedObject.transform.SetParent(parentTest.transform);
+			if(index < prefab.Count - 1)
+			{
+				index++;
+			}
+			else if(index == prefab.Count - 1)
+			{
+				index = 0;
+			}
+			else
+			{
+				Debug.Log("spawn index broke lol");
+			}
 		}
 	}
 }
