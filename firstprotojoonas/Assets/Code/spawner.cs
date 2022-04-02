@@ -29,11 +29,18 @@ namespace towerdefense
 		private int originalSpawnAmount;
 		private int spawnIndex;
 
+		[SerializeField]
+		private GameObject[] specialPrefab;
+
+		[SerializeField]
+		private int[] specialTimes;
+
+		private int specialIndex = 0;
+
 		private GameObject spawnedObject;
 
 		void Awake()
 		{	
-			spawnAmount = spawnAmount * prefab.Count;
 			originalSpawnAmount = spawnAmount;
 			spawnIndex = spawnAmount - 1;
 			timer = initialWait + Random.Range(-timerOffset, timerOffset);
@@ -79,19 +86,21 @@ namespace towerdefense
 
 		private void Spawn()
 		{
-			spawnedObject = Instantiate(prefab[index], transform.position, transform.rotation);
-			spawnedObject.transform.SetParent(parentTest.transform);
-			if(index < prefab.Count - 1)
+			if(spawnAmount == originalSpawnAmount - (specialTimes[specialIndex] - 1))
 			{
-				index++;
-			}
-			else if(index == prefab.Count - 1)
-			{
-				index = 0;
+				spawnedObject = Instantiate(specialPrefab[specialIndex], transform.position, transform.rotation);
+				spawnedObject.transform.SetParent(parentTest.transform);
+				if(specialIndex < specialTimes.Length - 1)
+				{
+					specialIndex++;
+				}
 			}
 			else
 			{
-				Debug.Log("spawn index broke lol");
+				spawnedObject = Instantiate(prefab[index], transform.position, transform.rotation);
+				spawnedObject.transform.SetParent(parentTest.transform);
+				index = Random.Range((int)0, (int)prefab.Count);
+				Debug.Log(index);
 			}
 		}
 	}
