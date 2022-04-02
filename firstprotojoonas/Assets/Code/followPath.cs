@@ -18,7 +18,7 @@ namespace towerdefense
         
         void Start()
         {
-            waypoints = GameObject.Find("Waypoints").GetComponent<WaypointList>().waypointList;
+            waypoints = FindObjectOfType<WaypointList>().waypointList;
             transform.position = waypoints[currentWaypoint].transform.position;
         }
 
