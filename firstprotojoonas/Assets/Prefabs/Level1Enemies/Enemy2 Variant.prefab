@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3160580252691994533, guid: 77f2dd83004e930468813d961e085626, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3160580252691994533, guid: 77f2dd83004e930468813d961e085626, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 3160580252691994534, guid: 77f2dd83004e930468813d961e085626, type: 3}
       propertyPath: m_Name
       value: Ranis
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160580252691994534, guid: 77f2dd83004e930468813d961e085626, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3160580252691994534, guid: 77f2dd83004e930468813d961e085626, type: 3}
       propertyPath: m_IsActive

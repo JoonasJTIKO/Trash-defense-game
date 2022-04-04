@@ -11,6 +11,9 @@ namespace towerdefense
 
         [SerializeField]
         private float speed = 1;
+        private float originalSpeed;
+        private bool slowed = false;
+        private float slowedTime;
 
         private GameObject parentTest2;
 
@@ -18,6 +21,7 @@ namespace towerdefense
         
         void Start()
         {
+            originalSpeed = speed;
             waypoints = FindObjectOfType<WaypointList>().waypointList;
             transform.position = waypoints[currentWaypoint].transform.position;
         }
@@ -25,6 +29,15 @@ namespace towerdefense
         void FixedUpdate()
         {
             Move();
+            if(slowed)
+            {
+                slowedTime -= Time.deltaTime;
+                if(slowedTime <= 0)
+                {
+                    slowed = false;
+                    speed = originalSpeed;
+                }
+            }
         }
 
         private void Move()
@@ -36,6 +49,16 @@ namespace towerdefense
                 {
                     currentWaypoint += 1;
                 }
+            }
+        }
+        
+        public void SetSpeed(float changeAmount, float slowTime)
+        {
+            if(!slowed)
+            {
+                speed = speed / changeAmount;
+                slowedTime = slowTime;
+                slowed = true;
             }
         }
     }

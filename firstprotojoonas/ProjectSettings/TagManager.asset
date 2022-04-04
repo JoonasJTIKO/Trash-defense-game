@@ -15,15 +15,16 @@ TagManager:
   - PlacePoint
   - Turret
   - DestroyTurret
+  - SlowingBullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Selections
-  - 
+  - WaveBullet
   - 
   - 
   - 

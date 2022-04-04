@@ -241,6 +241,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -367,7 +368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 350
+  m_text: 600
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1582,6 +1583,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2147,6 +2149,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2289,6 +2292,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2519,18 +2523,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 170285702}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1952971964}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2680,6 +2672,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2822,6 +2815,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -3064,6 +3058,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -3714,6 +3709,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -4030,6 +4026,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -4677,7 +4674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Melee:'
+  m_text: 'Slow:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8798,18 +8795,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 170285702}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1952971964}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9560,6 +9545,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -9713,7 +9699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1487841654
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9747,7 +9733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f4d6d59361ccd4b92bec19aed3ae7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 350
+  price: 600
   priceText: {fileID: 117264946}
 --- !u!114 &1487841656
 MonoBehaviour:
@@ -9817,14 +9803,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 170285704}
+        m_TargetAssemblyTypeName: towerdefense.SetSpawnObject, Assembly-CSharp
+        m_MethodName: setNextSpawn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -9914,6 +9900,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -10269,6 +10256,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -11113,6 +11101,7 @@ MonoBehaviour:
   spawnObject:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
+  - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}

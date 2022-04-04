@@ -9,6 +9,8 @@ namespace towerdefense
         [SerializeField]
         private int health;
 
+        private followPath pathFollow;
+
         private EnemyCounter enemyCounter;
         
         [SerializeField]
@@ -16,6 +18,7 @@ namespace towerdefense
 
         void Awake()
         {
+            pathFollow = GetComponent<followPath>();
             enemyCounter = FindObjectOfType<EnemyCounter>();
         }
 
@@ -37,6 +40,14 @@ namespace towerdefense
             if (col.gameObject.tag == "Melee")
             {
                 health--;
+            }
+        }
+
+        void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.gameObject.tag == "SlowingBullet")
+            {
+                pathFollow.SetSpeed(2,3);
             }
         }
 
