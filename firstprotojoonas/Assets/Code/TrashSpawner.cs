@@ -35,7 +35,7 @@ namespace towerdefense
         private GameObject destroyedTrash;
 
         [SerializeField]
-        public TextMeshProUGUI timeOver;
+        public GameObject timeOver;
 
         [SerializeField]
         public TextMeshProUGUI timerText;
@@ -44,11 +44,15 @@ namespace towerdefense
         private int totalTrash;
         private SceneLoader sceneChanger;
 
-        public GameObject sceneChangerObject;
+        private GameObject sceneChangerObject;
 
         private SceneLoader sceneLoaderScript;
 
-        
+
+        void Awake()
+        {
+            timeOver.SetActive(false);
+        }
         void Start()
         {
             trashUI = FindObjectOfType<TrashUI>();
@@ -60,7 +64,6 @@ namespace towerdefense
             spawnInterval = sortingTimer / totalTrash;
             sceneChangerObject = GameObject.Find("SceneChanger");
             sceneLoaderScript = sceneChangerObject.GetComponent<SceneLoader>();
-            Debug.Log(sceneChangerObject);
             StartCoroutine(spawnTrash());
         }
 
@@ -97,14 +100,18 @@ namespace towerdefense
             Debug.Log(sortingTimer);
             sortingTimer -= Time.deltaTime;
             timerText.SetText(sortingTimer.ToString("F1"));
-            
 
             if (sortingTimer <= 0.0f)
             {
                 timerText.SetText("0.0");
-                timeOver.IsActive();
-                sceneLoaderScript.swapScene();
+                timeOver.SetActive(true);
+                Invoke("startSwapScene", 2.0f);
             }
+        }
+
+        private void startSwapScene()
+        {
+            sceneLoaderScript.swapScene();
         }
     }
 }
