@@ -15,6 +15,9 @@ namespace towerdefense
         [SerializeField]
         private int rewardAmount;
 
+
+        // public PlayerMovement playerObject;
+
         static bool alreadyAttached = false;
         // Start is called before the first frame update
         void Start()
@@ -30,7 +33,9 @@ namespace towerdefense
             }
             else if (col.gameObject.tag == "Player" && !alreadyAttached)
             {
+                PlayerMovement playerScript = col.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
                 this.transform.parent = col.transform;
+                playerScript.setChildObject(this.gameObject);
                 alreadyAttached = true;
             }
             else if (col.gameObject.tag != "Trash" && col.gameObject.tag != "Player")

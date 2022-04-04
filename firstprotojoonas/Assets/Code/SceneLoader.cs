@@ -54,14 +54,22 @@ namespace towerdefense
 
         private void checkForTrashLeft()
         {
-            if (GameObject.FindGameObjectsWithTag("Trash").Length == 0)
-            {
-                SceneManager.UnloadSceneAsync("Playermovement");
-                currentScene = 0;
-                everything.SetActive(true);
-                trashUI.Reset();
-                // Start next level
-            }
+            // if (GameObject.FindGameObjectsWithTag("Trash").Length == 0)
+            // {
+            //     SceneManager.UnloadSceneAsync("Playermovement");
+            //     currentScene = 0;
+            //     everything.SetActive(true);
+            //     trashUI.Reset();
+            //     // Start next level
+            // }
+        }
+
+        public void swapScene()
+        {
+            SceneManager.UnloadSceneAsync("Playermovement");
+            currentScene = 0;
+            everything.SetActive(true);
+            trashUI.Reset();
         }
 
         void changeCurrentSceneIndex()
