@@ -11,7 +11,10 @@ namespace towerdefense
 
         public void DeactivatePlacePoints()
         {
-            placePoints.SetActive(false);
+            foreach(Transform item in placePoints.transform)
+            {
+                item.gameObject.SetActive(false);
+            }
         }
     }
 }

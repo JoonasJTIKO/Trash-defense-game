@@ -22,7 +22,7 @@ namespace towerdefense
             transform.position = waypoints[currentWaypoint].transform.position;
         }
 
-        void Update()
+        void FixedUpdate()
         {
             Move();
         }

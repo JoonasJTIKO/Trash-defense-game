@@ -166,7 +166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780321043}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &66659950
 GameObject:
@@ -183,11 +183,11 @@ GameObject:
   - component: {fileID: 66659951}
   m_Layer: 0
   m_Name: placementPointTurret7
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &66659951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +242,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &66659954
@@ -919,7 +920,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780321043}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &153526830
 MonoBehaviour:
@@ -951,7 +952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &170285703
 Transform:
   m_ObjectHideFlags: 0
@@ -977,7 +978,7 @@ Transform:
   - {fileID: 333271006}
   - {fileID: 1840221055}
   m_Father: {fileID: 780321043}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &170285704
 MonoBehaviour:
@@ -991,20 +992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7065cd3c16035cf4695cd226b7474503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placePoints:
-  - {fileID: 1478246692}
-  - {fileID: 1502131736}
-  - {fileID: 742285062}
-  - {fileID: 384948917}
-  - {fileID: 513387525}
-  - {fileID: 729297647}
-  - {fileID: 66659950}
-  - {fileID: 1598253328}
-  - {fileID: 515905098}
-  - {fileID: 638479692}
-  - {fileID: 386669129}
-  - {fileID: 333271005}
-  - {fileID: 1840221054}
 --- !u!1 &173050377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,11 +1510,11 @@ GameObject:
   - component: {fileID: 333271007}
   m_Layer: 0
   m_Name: placementPointTurret12
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &333271006
 Transform:
   m_ObjectHideFlags: 0
@@ -1596,6 +1583,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &333271010
@@ -2084,7 +2072,7 @@ Transform:
   m_Children:
   - {fileID: 952917980}
   m_Father: {fileID: 780321043}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &384948917
 GameObject:
@@ -2101,11 +2089,11 @@ GameObject:
   - component: {fileID: 384948918}
   m_Layer: 0
   m_Name: placementPointTurret4
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &384948918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,6 +2148,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &384948921
@@ -2242,11 +2231,11 @@ GameObject:
   - component: {fileID: 386669130}
   m_Layer: 0
   m_Name: placementPointTurret11
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &386669130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,6 +2290,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &386669133
@@ -2632,11 +2622,11 @@ GameObject:
   - component: {fileID: 513387526}
   m_Layer: 0
   m_Name: placementPointTurret5
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &513387526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2691,6 +2681,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &513387529
@@ -2773,11 +2764,11 @@ GameObject:
   - component: {fileID: 515905099}
   m_Layer: 0
   m_Name: placementPointTurret9
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &515905099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2832,6 +2823,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &515905102
@@ -3014,11 +3006,11 @@ GameObject:
   - component: {fileID: 638479693}
   m_Layer: 0
   m_Name: placementPointTurret10
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &638479693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3073,6 +3065,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &638479696
@@ -3663,11 +3656,11 @@ GameObject:
   - component: {fileID: 729297648}
   m_Layer: 0
   m_Name: placementPointTurret6
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &729297648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3722,6 +3715,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &729297651
@@ -3978,11 +3972,11 @@ GameObject:
   - component: {fileID: 742285063}
   m_Layer: 0
   m_Name: placementPointTurret3
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &742285063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4037,6 +4031,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &742285066
@@ -4267,6 +4262,7 @@ Transform:
   - {fileID: 1947016426}
   - {fileID: 1482465849}
   - {fileID: 1023881892}
+  - {fileID: 2063741298}
   - {fileID: 170285703}
   - {fileID: 1475007439}
   - {fileID: 153526829}
@@ -5074,6 +5070,7 @@ GameObject:
   - component: {fileID: 952917980}
   - component: {fileID: 952917982}
   - component: {fileID: 952917981}
+  - component: {fileID: 952917983}
   m_Layer: 0
   m_Name: Route
   m_TagString: Untagged
@@ -8153,6 +8150,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &952917983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952917979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c48cde0fbcd9054a8f250234ec0411b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperText: {fileID: 0}
+  cardboardText: {fileID: 0}
+  plasticText: {fileID: 0}
+  bioText: {fileID: 0}
 --- !u!1 &960721086
 GameObject:
   m_ObjectHideFlags: 0
@@ -9433,7 +9446,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780321043}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478246692
 GameObject:
@@ -9450,11 +9463,11 @@ GameObject:
   - component: {fileID: 1478246695}
   m_Layer: 0
   m_Name: placementPointTurret1
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1478246693
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9548,6 +9561,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!61 &1478246697
@@ -9880,11 +9894,11 @@ GameObject:
   - component: {fileID: 1502131738}
   m_Layer: 0
   m_Name: placementPointTurret2
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1502131737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9901,6 +9915,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!114 &1502131738
@@ -10196,11 +10211,11 @@ GameObject:
   - component: {fileID: 1598253329}
   m_Layer: 0
   m_Name: placementPointTurret8
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1598253329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10255,6 +10270,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &1598253332
@@ -10685,7 +10701,7 @@ Transform:
   - {fileID: 381149486}
   - {fileID: 1633993989}
   m_Father: {fileID: 780321043}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1673999690
 MonoBehaviour:
@@ -11025,11 +11041,11 @@ GameObject:
   - component: {fileID: 1840221056}
   m_Layer: 0
   m_Name: placementPointTurret13
-  m_TagString: Untagged
+  m_TagString: PlacePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1840221055
 Transform:
   m_ObjectHideFlags: 0
@@ -11098,6 +11114,7 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
+  usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
   StartGame: {fileID: 1952971964}
 --- !u!212 &1840221059
@@ -12260,6 +12277,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unloadScene: 0
+--- !u!1 &2063741297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2063741298}
+  m_Layer: 0
+  m_Name: UsedTurretPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2063741298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063741297}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.9917642, y: -0.7175666, z: -0.38010818}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 780321043}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074169202
 GameObject:
   m_ObjectHideFlags: 0

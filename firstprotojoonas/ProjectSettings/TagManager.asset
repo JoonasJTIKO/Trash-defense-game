@@ -12,6 +12,9 @@ TagManager:
   - Melee
   - Plastic
   - Paper
+  - PlacePoint
+  - Turret
+  - DestroyTurret
   layers:
   - Default
   - TransparentFX

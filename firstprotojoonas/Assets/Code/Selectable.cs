@@ -10,7 +10,18 @@ namespace towerdefense
         public void OnPointerDown(PointerEventData eventData)
         {
             Debug.Log("click");
-            gameObject.GetComponent<turretPlace>().placeTurret();
+            if(gameObject.tag == "PlacePoint")
+            {
+                gameObject.GetComponent<turretPlace>().placeTurret();
+            }
+            else if(gameObject.tag == "Turret")
+            {
+                gameObject.GetComponent<TurretMenu>().OpenMenu();
+            }
+            else if(gameObject.tag == "DestroyTurret")
+            {
+                gameObject.GetComponentInParent<TurretDestroy>().Destroy();
+            }
         }
     }
 }

@@ -6,15 +6,13 @@ namespace towerdefense
 {
     public class SetSpawnObject : MonoBehaviour
     {
-        [SerializeField]
-        private List<GameObject> placePoints = new List<GameObject>();
-
         public void setNextSpawn(int number)
         {
-            foreach(GameObject placePoint in placePoints)
+            foreach(Transform placePoint in transform)
             {
                 if(placePoint != null)
                 {
+                    placePoint.gameObject.SetActive(true);
                     placePoint.GetComponent<turretPlace>().SetObjectNumber(number);
                 }
             }

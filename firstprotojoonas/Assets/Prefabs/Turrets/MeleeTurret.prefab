@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 4029120451403740868}
   - component: {fileID: 4029120451403740869}
   - component: {fileID: 4029120451403740872}
+  - component: {fileID: 58012768238118615}
+  - component: {fileID: -277747481548544682}
   m_Layer: 2
   m_Name: MeleeTurret
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,3 +143,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &58012768238118615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029120451403740871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274cb575694df7b4d93dbc3a608369af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-277747481548544682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029120451403740871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80bea2b241e2aeb4d8fec1796a19d3d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 0}

@@ -13,6 +13,9 @@ namespace towerdefense
         private GameObject turretBase;
 
         [SerializeField]
+        private GameObject usedTurretPoints;
+
+        [SerializeField]
         private GameObject ShopUI;
 
         [SerializeField]
@@ -24,6 +27,8 @@ namespace towerdefense
 
         private GameObject parentObject; // Että saa everythingin alle
 
+        private GameObject placedTurret;
+
         void Start() 
         {
             parentObject = GameObject.Find("Everything");
@@ -32,11 +37,12 @@ namespace towerdefense
         public void placeTurret()
         {
             turretPos = new Vector3 (transform.position.x, transform.position.y, 0);
-            Instantiate(turretBase, turretPos, transform.rotation, parentObject.transform);
-            Instantiate(spawnObject[objectNumber], turretPos, transform.rotation, parentObject.transform);
+            placedTurret = Instantiate(spawnObject[objectNumber], turretPos, transform.rotation, parentObject.transform);
+            Instantiate(turretBase, turretPos, transform.rotation, placedTurret.transform);
             ShopUI.SetActive(true);
             StartGame.SetActive(true);
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            this.gameObject.transform.SetParent(usedTurretPoints.transform);
             ShopUI.GetComponent<ShopUI>().DeactivatePlacePoints();
         }
 
