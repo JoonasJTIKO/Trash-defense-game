@@ -3346,7 +3346,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 780321043}
+    m_TransformParent: {fileID: 938519885}
     m_Modifications:
     - target: {fileID: 3434860227374462926, guid: 952f2e7d4a0ca484cbeee5879b9f2f1b, type: 3}
       propertyPath: m_Name
@@ -3418,19 +3418,19 @@ PrefabInstance:
       objectReference: {fileID: 1444547794211583307, guid: 260fc51f0cf4588428d3d2c79521631c, type: 3}
     - target: {fileID: 3434860227374462960, guid: 952f2e7d4a0ca484cbeee5879b9f2f1b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3434860227374462960, guid: 952f2e7d4a0ca484cbeee5879b9f2f1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.500001
+      value: -1.8904508
       objectReference: {fileID: 0}
     - target: {fileID: 3434860227374462960, guid: 952f2e7d4a0ca484cbeee5879b9f2f1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 5.7773566
       objectReference: {fileID: 0}
     - target: {fileID: 3434860227374462960, guid: 952f2e7d4a0ca484cbeee5879b9f2f1b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.5856302
       objectReference: {fileID: 0}
     - target: {fileID: 3434860227374462960, guid: 952f2e7d4a0ca484cbeee5879b9f2f1b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4256,7 +4256,7 @@ Transform:
   - {fileID: 200488101}
   - {fileID: 374993602}
   - {fileID: 519420032}
-  - {fileID: 1947016426}
+  - {fileID: 938519885}
   - {fileID: 1482465849}
   - {fileID: 1023881892}
   - {fileID: 2063741298}
@@ -5056,6 +5056,52 @@ MonoBehaviour:
   cardboardText: {fileID: 173050379}
   plasticText: {fileID: 1670298909}
   bioText: {fileID: 1969853319}
+--- !u!1 &938519884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938519885}
+  - component: {fileID: 938519886}
+  m_Layer: 0
+  m_Name: Spawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &938519885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938519884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.6095501, y: 0.22264354, z: -0.5856302}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1947016426}
+  m_Father: {fileID: 780321043}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &938519886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938519884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9519c2c2ff8ad4a84baf05b1084212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawners:
+  - {fileID: 1947016424}
 --- !u!1 &952917979
 GameObject:
   m_ObjectHideFlags: 0
@@ -11620,7 +11666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1952971965
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11685,18 +11731,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1947016424}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1952971964}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11736,6 +11770,30 @@ MonoBehaviour:
       - m_Target: {fileID: 263823645}
         m_TargetAssemblyTypeName: towerdefense.ShopUI, Assembly-CSharp
         m_MethodName: DeactivatePlacePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 938519886}
+        m_TargetAssemblyTypeName: towerdefense.SetSpawner, Assembly-CSharp
+        m_MethodName: SelectSpawner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 938519886}
+        m_TargetAssemblyTypeName: towerdefense.SetSpawner, Assembly-CSharp
+        m_MethodName: IncreaseIndex
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
