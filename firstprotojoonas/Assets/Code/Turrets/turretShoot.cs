@@ -63,7 +63,7 @@ namespace towerdefense
                     {
                         anim.SetBool("Shoot", true);
                     }
-                    GameObject bulletIns = Instantiate(projectile, transform.position, transform.rotation);
+                    GameObject bulletIns = Instantiate(projectile, (Vector2)transform.position + direction.normalized, transform.rotation);
                     bulletIns.GetComponent<Rigidbody2D>().AddForce(direction * force);
                     timeBtwShots = 1 / fireRate;
                 }
