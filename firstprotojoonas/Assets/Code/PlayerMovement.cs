@@ -15,10 +15,11 @@ namespace towerdefense
         private float xpositionToFlip;
 
         private GameObject attachedTrash;
+        private Animator anim;
         // Start is called before the first frame update
         void Start()
         {
-
+            anim = GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -28,10 +29,11 @@ namespace towerdefense
             {
                 lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 moving = true;
+                anim.SetBool("Walking", true);
                 if (transform.position.x < lastClickedPos.x)
                 {
                     // transform.localScale = new Vector2(-1.5f, transform.localScale.y);
-                    this.GetComponent<SpriteRenderer>().flipX = true;
+                    this.GetComponent<SpriteRenderer>().flipX = false;
                     // if (carryingTrash)
                     // {
                     //     attachedTrash.transform.position = new Vector2(System.Math.Abs(xpositionToFlip), 0f);
@@ -40,7 +42,7 @@ namespace towerdefense
                 else
                 {
                     // transform.localScale = new Vector2(1.5f, transform.localScale.y);
-                    this.GetComponent<SpriteRenderer>().flipX = false;
+                    this.GetComponent<SpriteRenderer>().flipX = true;
                     // if (carryingTrash)
                     // {
                     //     attachedTrash.transform.position = new Vector2(System.Math.Abs(xpositionToFlip) * -1, 0f);
@@ -57,6 +59,7 @@ namespace towerdefense
             else
             {
                 moving = false;
+                anim.SetBool("Walking", false);
             }
             // if (transform.right != (lastClickedPos - new Vector2(transform.position.x, transform.position.y))){
             //     transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
