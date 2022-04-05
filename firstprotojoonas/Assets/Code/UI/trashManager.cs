@@ -15,6 +15,8 @@ namespace towerdefense
         [SerializeField]
         private int rewardAmount;
 
+        private PlayerMovement playerScript;
+
 
         // public PlayerMovement playerObject;
 
@@ -29,11 +31,12 @@ namespace towerdefense
             if (col.gameObject.tag == this.trashType.ToString())
             {
                 ui.AddMoney(rewardAmount);
+                playerScript.speed = playerScript.speed * 1.05f;
                 Destroy(this.gameObject);
             }
             else if (col.gameObject.tag == "Player" && !alreadyAttached)
             {
-                PlayerMovement playerScript = col.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
+                playerScript = col.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
                 this.transform.parent = col.transform;
                 playerScript.setChildObject(this.gameObject);
                 alreadyAttached = true;
