@@ -7,18 +7,17 @@ namespace towerdefense
     public class EnemyCounter : MonoBehaviour
     {
         [SerializeField]
-        private int maxEnemyCount;
+        public int maxEnemyCount;
         private EndGame endGame;
-        private spawner spawner;
+        private SetSpawner spawner;
 
         private TrashUI trashUI;
 
         void Start()
         {
-            spawner = GetComponent<spawner>();
+            spawner = GetComponent<SetSpawner>();
             endGame = FindObjectOfType<EndGame>();
             trashUI = FindObjectOfType<TrashUI>();
-            maxEnemyCount = spawner.spawnAmount;
         }
 
         public void RemoveEnemy(string type, bool addDestroyed = true)
@@ -33,14 +32,6 @@ namespace towerdefense
             if(maxEnemyCount == 0)
             {
                 endGame.Win();
-            }
-        }
-
-        private void OnEnable()
-        {
-            if(spawner != null)
-            {
-                maxEnemyCount = spawner.spawnAmount;
             }
         }
     }

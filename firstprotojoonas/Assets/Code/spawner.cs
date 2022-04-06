@@ -61,6 +61,10 @@ namespace towerdefense
 					timer = spawnTime + Random.Range(-timerOffset, timerOffset);
 					spawnIndex--;
 				}
+				else if(spawnIndex == 0)
+				{
+					gameObject.SetActive(false);
+				}
 			}
 		}
 
@@ -100,7 +104,6 @@ namespace towerdefense
 				spawnedObject = Instantiate(prefab[index], transform.position, transform.rotation);
 				spawnedObject.transform.SetParent(parentTest.transform);
 				index = Random.Range((int)0, (int)prefab.Count);
-				Debug.Log(index);
 			}
 		}
 	}
