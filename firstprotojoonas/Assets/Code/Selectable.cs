@@ -14,7 +14,7 @@ namespace towerdefense
             {
                 gameObject.GetComponent<turretPlace>().placeTurret();
             }
-            else if(gameObject.tag == "Turret")
+            else if(gameObject.tag == "turretMenu")
             {
                 gameObject.GetComponent<TurretMenu>().OpenMenu();
             }

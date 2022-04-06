@@ -20,23 +20,49 @@ namespace towerdefense
         GameObject closestObject;
         private float oldDistance = 9999;
         private Animator anim;
-    
+        private GameObject turretBase;
+        private GameObject turretMenu;
+
         [SerializeField]
         private GameObject object1, object2;     // Player ship and turret, respectively
         private float Distance_; // shows distance between 2 objects in unity
 
         [SerializeField]
         private float force;
+        private Vector2 defaultRotate;
 
         void Awake()
         {
             anim = GetComponent<Animator>();
+            defaultRotate = transform.up;
         }
-    
+
         // Update is called once per frame
         void Update()
         {
-            if(closestObject == null)
+            if (turretBase == null)
+            {
+                foreach (Transform item in gameObject.transform)
+                {
+                    if (item.gameObject.tag == "turretBase")
+                    {
+                        turretBase = item.gameObject;
+                    }
+                }
+            }
+            if (turretMenu == null)
+            {
+                foreach (Transform item in gameObject.transform)
+                {
+                    if (item.gameObject.tag == "turretMenu")
+                    {
+                        Debug.Log("Menu found");
+                        turretMenu = item.gameObject;
+                    }
+                }
+            }
+
+            if (closestObject == null)
             {
                 foreach (GameObject g in NearGameobjects)
                 {
@@ -57,9 +83,17 @@ namespace towerdefense
                 direction = enemyPos - (Vector2)transform.position;
                 Distance_ = Vector2.Distance(object1.transform.position, object2.transform.position);
                 transform.up = direction;
-                if(timeBtwShots <= 0 )
-                {    
-                    if(anim != null)
+                if (turretBase != null)
+                {
+                    turretBase.transform.up = defaultRotate;
+                }
+                if (turretMenu != null)
+                {
+                    turretMenu.transform.up = defaultRotate;
+                }
+                if (timeBtwShots <= 0)
+                {
+                    if (anim != null)
                     {
                         anim.SetBool("Shoot", true);
                     }
@@ -69,7 +103,7 @@ namespace towerdefense
                 }
                 else
                 {
-                    if(anim != null)
+                    if (anim != null)
                     {
                         anim.SetBool("Shoot", false);
                     }
@@ -83,17 +117,17 @@ namespace towerdefense
         }
         void OnTriggerEnter2D(Collider2D col)
         {
-            if(col.gameObject.tag == "Enemy")
+            if (col.gameObject.tag == "Enemy")
             {
                 NearGameobjects.Add(col.gameObject);
             }
         }
         void OnTriggerExit2D(Collider2D col)
         {
-            if(col.gameObject.tag == "Enemy")
+            if (col.gameObject.tag == "Enemy")
             {
                 NearGameobjects.Remove(col.gameObject);
-                if(col.gameObject == closestObject)
+                if (col.gameObject == closestObject)
                 {
                     closestObject = null;
                 }

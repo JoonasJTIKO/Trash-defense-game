@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8446213125473537189}
   m_Layer: 2
   m_Name: Select
-  m_TagString: Turret
+  m_TagString: TurretMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,7 +89,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f61abb4555e9934891731b48aa4fadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placePoint: {fileID: 5417258949696463944, guid: 89b2bcd1fd2ab21458e6c432ea3a46e7, type: 3}
 --- !u!50 &6352535955982298707
 Rigidbody2D:
   serializedVersion: 4

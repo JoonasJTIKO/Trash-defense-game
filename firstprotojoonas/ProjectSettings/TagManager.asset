@@ -16,6 +16,8 @@ TagManager:
   - Turret
   - DestroyTurret
   - SlowingBullet
+  - turretBase
+  - turretMenu
   layers:
   - Default
   - TransparentFX
