@@ -34,19 +34,19 @@ namespace towerdefense
                 {
                     // transform.localScale = new Vector2(-1.5f, transform.localScale.y);
                     this.GetComponent<SpriteRenderer>().flipX = false;
-                    // if (carryingTrash)
-                    // {
-                    //     attachedTrash.transform.position = new Vector2(System.Math.Abs(xpositionToFlip), 0f);
-                    // }
+                    if (carryingTrash)
+                    {
+                        attachedTrash.transform.localPosition = new Vector2(0.3f, 0f);
+                    }
                 }
                 else
                 {
                     // transform.localScale = new Vector2(1.5f, transform.localScale.y);
                     this.GetComponent<SpriteRenderer>().flipX = true;
-                    // if (carryingTrash)
-                    // {
-                    //     attachedTrash.transform.position = new Vector2(System.Math.Abs(xpositionToFlip) * -1, 0f);
-                    // }               
+                    if (carryingTrash)
+                    {
+                        attachedTrash.transform.localPosition = new Vector2(-0.3f, 0f);
+                    }               
                 }
                 // transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
             }
