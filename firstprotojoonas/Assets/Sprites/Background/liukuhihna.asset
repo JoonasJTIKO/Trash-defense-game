@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: liukuhihna
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -8106926475999309888, guid: 5ea7767385dae1c45a6d2d67fbe1bfd1, type: 3}
-  - {fileID: -166553166392394220, guid: 5ea7767385dae1c45a6d2d67fbe1bfd1, type: 3}
-  - {fileID: 5519774646675728777, guid: 5ea7767385dae1c45a6d2d67fbe1bfd1, type: 3}
-  - {fileID: 4334839586828913279, guid: 5ea7767385dae1c45a6d2d67fbe1bfd1, type: 3}
-  m_MinSpeed: 5
-  m_MaxSpeed: 5
+  - {fileID: 21300000, guid: 5fa77ebf8112efc4bb3a3b01c7e6db35, type: 3}
+  - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
+  - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
+  - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
+  m_MinSpeed: 7
+  m_MaxSpeed: 7
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0

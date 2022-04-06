@@ -8,12 +8,31 @@ namespace towerdefense
     {
         [SerializeField]
         private GameObject[] spawners;
+
         private int index = 0;
+        
+        [SerializeField]
+        public int spawnAmount;
+
+        [SerializeField]
+        private int maxRounds;
+
+        private EnemyCounter counter;
+
+        void Start()
+        {
+            counter = GetComponent<EnemyCounter>();
+        }
 
         public void SelectSpawner()
         {
+            spawnAmount = spawners[index].GetComponent<spawner>().spawnAmount;
+            counter.maxEnemyCount = spawnAmount;
             spawners[index].SetActive(true);
-            index++;
+            if(index != maxRounds - 1)
+            {
+                index++;
+            }
         }
     }
 }
