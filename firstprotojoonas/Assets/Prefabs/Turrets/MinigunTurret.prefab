@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f61abb4555e9934891731b48aa4fadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  refundAmount: 600
 --- !u!50 &6352535955982298707
 Rigidbody2D:
   serializedVersion: 4

@@ -242,6 +242,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -1740,6 +1744,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2306,6 +2314,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2449,6 +2461,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -2945,6 +2961,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -3088,6 +3108,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -3567,6 +3591,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -4308,6 +4336,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -4625,6 +4657,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -9091,7 +9127,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -3, z: 0}
@@ -9161,7 +9197,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: -2, z: 0}
@@ -9261,7 +9297,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 5, y: 1, z: 0}
@@ -9291,7 +9327,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -4, y: 2, z: 0}
@@ -9331,7 +9367,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: 2, z: 0}
@@ -9351,7 +9387,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: 3, z: 0}
@@ -11353,6 +11389,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -11708,6 +11748,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -12064,6 +12108,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}
@@ -13066,6 +13114,10 @@ MonoBehaviour:
   - {fileID: 5115742538752015169, guid: 3fc60dad0789b06418b0a158d1b8a06c, type: 3}
   - {fileID: 8999686980419860094, guid: 8eb15a08d2b6583468f458999cc1ddc1, type: 3}
   - {fileID: 395718820951622208, guid: e7bebafe1d21b4141948a36051c05878, type: 3}
+  prices:
+  - 150
+  - 600
+  - 600
   turretBase: {fileID: 4838942975022959757, guid: b5ef840cce3580746a2caef504c90e42, type: 3}
   usedTurretPoints: {fileID: 2063741297}
   ShopUI: {fileID: 263823641}

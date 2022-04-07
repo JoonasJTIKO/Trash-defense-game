@@ -10,13 +10,19 @@ namespace towerdefense
 
         private GameObject turretPoints;
 
+        private MoneyUI moneyUI;
+
         private Transform parent;
+
+        [SerializeField]
+        private float refundAmount;
 
         void Awake()
         {
             usedTurretPoints = GameObject.Find("UsedTurretPoints");
             turretPoints = GameObject.Find("TurretPoints");
             parent = this.transform.parent;
+            moneyUI = FindObjectOfType<MoneyUI>();
         }
         public void Destroy()
         {
@@ -27,6 +33,7 @@ namespace towerdefense
                     item.SetParent(turretPoints.transform);
                 }
             }
+            moneyUI.AddMoney(refundAmount);
             Destroy(this.transform.parent.gameObject);
         }
     }

@@ -10,6 +10,9 @@ namespace towerdefense
         private List<GameObject> spawnObject = new List<GameObject>();
 
         [SerializeField]
+        private List<float> prices = new List<float>();
+
+        [SerializeField]
         private GameObject turretBase;
 
         [SerializeField]
@@ -21,6 +24,8 @@ namespace towerdefense
         [SerializeField]
         private GameObject StartGame;
 
+        private MoneyUI moneyUI;
+
         private Vector3 turretPos;
 
         private int objectNumber;
@@ -29,9 +34,11 @@ namespace towerdefense
 
         private GameObject placedTurret;
 
+
         void Start() 
         {
             parentObject = GameObject.Find("Everything");
+            moneyUI = FindObjectOfType<MoneyUI>();
         }
 
         public void placeTurret()
@@ -44,6 +51,7 @@ namespace towerdefense
             this.gameObject.SetActive(false);
             this.gameObject.transform.SetParent(usedTurretPoints.transform);
             ShopUI.GetComponent<ShopUI>().DeactivatePlacePoints();
+            moneyUI.SetMoney(prices[objectNumber]);
         }
 
         public void SetObjectNumber(int number)

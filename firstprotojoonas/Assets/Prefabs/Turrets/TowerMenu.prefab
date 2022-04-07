@@ -600,6 +600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat: range
+  maxUpgrades: 2
+  price: 200
 --- !u!1 &6613498684640548901
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat: fireRate
+  maxUpgrades: 2
+  price: 300
 --- !u!1 &8909229316323236549
 GameObject:
   m_ObjectHideFlags: 0
