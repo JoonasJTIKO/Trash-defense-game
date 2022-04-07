@@ -133,5 +133,17 @@ namespace towerdefense
                 }
             }
         }
+
+        public void UpgradeStat(string stat)
+        {
+            if(stat == "fireRate")
+            {
+                fireRate += 0.5F;
+            }
+            if(stat == "range")
+            {
+                range += 1;
+            }
+        }
     }
 }

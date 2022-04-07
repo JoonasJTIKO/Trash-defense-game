@@ -22,6 +22,10 @@ namespace towerdefense
             {
                 gameObject.GetComponentInParent<TurretDestroy>().Destroy();
             }
+            else if(gameObject.tag == "UpgradeTurret")
+            {
+                gameObject.GetComponent<TurretUpgrade>().Upgrade();
+            }
         }
     }
 }

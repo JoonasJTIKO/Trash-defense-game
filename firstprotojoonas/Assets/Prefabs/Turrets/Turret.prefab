@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4820314876267842641}
   m_Layer: 2
   m_Name: Select
-  m_TagString: TurretMenu
+  m_TagString: turretMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

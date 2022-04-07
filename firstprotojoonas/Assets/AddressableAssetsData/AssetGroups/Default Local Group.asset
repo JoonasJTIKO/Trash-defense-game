@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: f46349da8f33c34468765ae536028b44
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: a6f912b4c55a34040ae3e954acdcd043
+    m_Address: Assets/Localization/Coolville.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4a8d821b03242f14190ebc59dc54ee0b, type: 2}
   m_SchemaSet:
