@@ -10,7 +10,6 @@ namespace towerdefense
         public float speed = 10f;
         Vector2 lastClickedPos;
         bool moving;
-        bool carryingTrash;
 
         private float xpositionToFlip;
 
@@ -34,7 +33,7 @@ namespace towerdefense
                 {
                     // transform.localScale = new Vector2(-1.5f, transform.localScale.y);
                     this.GetComponent<SpriteRenderer>().flipX = false;
-                    if (carryingTrash)
+                    if (attachedTrash)
                     {
                         attachedTrash.transform.localPosition = new Vector2(0.3f, 0f);
                     }
@@ -43,7 +42,7 @@ namespace towerdefense
                 {
                     // transform.localScale = new Vector2(1.5f, transform.localScale.y);
                     this.GetComponent<SpriteRenderer>().flipX = true;
-                    if (carryingTrash)
+                    if (attachedTrash)
                     {
                         attachedTrash.transform.localPosition = new Vector2(-0.3f, 0f);
                     }               
@@ -69,8 +68,13 @@ namespace towerdefense
         public void setChildObject(GameObject a)
         {
             attachedTrash = a;
-            carryingTrash = true;
-            xpositionToFlip = attachedTrash.transform.position.x;
+            // xpositionToFlip = attachedTrash.transform.position.x;
+        }
+
+        public void removeChildObject()
+        {
+            attachedTrash = null;
+            // xpositionToFlip = null;
         }
     }
 }

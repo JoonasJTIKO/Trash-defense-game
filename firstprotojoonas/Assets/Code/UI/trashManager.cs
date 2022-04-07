@@ -45,6 +45,7 @@ namespace towerdefense
             {
                 //EI Massiii
                 Debug.Log("Wrong bin idiot");
+                playerScript.removeChildObject();
                 Destroy(this.gameObject);
             }
         }
