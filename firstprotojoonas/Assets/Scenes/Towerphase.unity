@@ -940,7 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCount: 3
-  enemyCounter: {fileID: 0}
+  enemyCounter: {fileID: 938519887}
 --- !u!1 &170285702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,18 +2757,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1475007438}
-        m_TargetAssemblyTypeName: towerdefense.MoneySystem, Assembly-CSharp
-        m_MethodName: SetMoney
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 600
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1952971964}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -8997,7 +8985,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 5, y: -5, z: 0}
@@ -9287,7 +9275,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: 1, z: 0}
@@ -9377,7 +9365,7 @@ Tilemap:
       - {fileID: 21300000, guid: 6abfe1cc9b352724e97bbc3ca22c4f35, type: 3}
       - {fileID: 21300000, guid: 9f7e940fca478af4189c4ec795915f2e, type: 3}
       - {fileID: 21300000, guid: b76ceffb6d94a1940847e23d157f07af, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 5, y: 2, z: 0}
@@ -10462,18 +10450,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1475007438}
-        m_TargetAssemblyTypeName: towerdefense.MoneySystem, Assembly-CSharp
-        m_MethodName: SetMoney
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 150
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1952971964}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -11637,18 +11613,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1475007438}
-        m_TargetAssemblyTypeName: towerdefense.MoneySystem, Assembly-CSharp
-        m_MethodName: SetMoney
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 600
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 170285704}
         m_TargetAssemblyTypeName: towerdefense.SetSpawnObject, Assembly-CSharp
