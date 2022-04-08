@@ -32,7 +32,7 @@ namespace towerdefense
         [SerializeField]
         private float sortingTimer = 30f;
 
-        private GameObject destroyedTrash;
+        // private GameObject destroyedTrash;
 
         [SerializeField]
         public GameObject timeOver;
@@ -47,6 +47,7 @@ namespace towerdefense
         private GameObject sceneChangerObject;
 
         private SceneLoader sceneLoaderScript;
+        private GameObject[] trashList;
 
 
         void Awake()
@@ -60,37 +61,45 @@ namespace towerdefense
             //bioToSpawn = TrashUI.bioAmount;
             plasticToSpawn = TrashUI.plasticAmount;
             paperToSpawn = TrashUI.paperAmount;
-            totalTrash = cardboardToSpawn + bioToSpawn + plasticToSpawn + paperToSpawn;
+            totalTrash = cardboardToSpawn + /*bioToSpawn +*/ plasticToSpawn + paperToSpawn;
+            trashList = new GameObject[totalTrash];
             spawnInterval = sortingTimer / totalTrash;
             sceneChangerObject = GameObject.Find("SceneChanger");
             sceneLoaderScript = sceneChangerObject.GetComponent<SceneLoader>();
+            addTrashToList();
             StartCoroutine(spawnTrash());
+        }
+
+        private void addTrashToList()
+        {
+            int x = 0;
+            for (int i = 0; i < cardboardToSpawn; i++)
+            {
+                trashList[x] = cardBoardPrefab;
+                x++;
+            }
+            // for (int i = 0; i < bioToSpawn; i++)
+            // {
+            //     trashList[x] = bioPrefab;
+            //     x++;
+            // }
+            for (int i = 0; i < plasticToSpawn; i++)
+            {
+                trashList[x] = plasticPrefab;
+                x++;
+            }
+            for (int i = 0; i < paperToSpawn; i++)
+            {
+                trashList[x] = paperPrefab;
+                x++;
+            }
         }
 
         public IEnumerator spawnTrash()
         {
-            for (int i = 0; i < cardboardToSpawn; i++)
+            for (int i = 0; i < trashList.Length; i++)
             {
-                Instantiate(cardBoardPrefab, new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity, this.transform);
-                trashUI.reduceByOne("cardboard");
-                yield return new WaitForSeconds(spawnInterval);
-            }
-            for (int i = 0; i < bioToSpawn; i++)
-            {
-                Instantiate(bioPrefab, new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity, this.transform);
-                trashUI.reduceByOne("bio");
-                yield return new WaitForSeconds(spawnInterval);
-            }
-            for (int i = 0; i < plasticToSpawn; i++)
-            {
-                Instantiate(plasticPrefab, new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity, this.transform);
-                trashUI.reduceByOne("plastic");
-                yield return new WaitForSeconds(spawnInterval);
-            }
-            for (int i = 0; i < paperToSpawn; i++)
-            {
-                Instantiate(paperPrefab, new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity, this.transform);
-                trashUI.reduceByOne("paper");
+                Instantiate(trashList[i], new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity, this.transform);
                 yield return new WaitForSeconds(spawnInterval);
             }
         }

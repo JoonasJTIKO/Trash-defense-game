@@ -76,5 +76,11 @@ namespace towerdefense
             attachedTrash = null;
             // xpositionToFlip = null;
         }
+
+        private IEnumerator speedBoost()
+        {
+            speed = speed * 1.4f;
+            yield return new WaitForSeconds(4.0f);
+        }
     }
 }
