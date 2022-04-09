@@ -56,9 +56,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 89444f82218b7c645924ee78a58b85d6, type: 3}
     - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: type
+      value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed
+      value: 
+      objectReference: {fileID: 5038216082598628541, guid: 9032ce9a31b63434aaab5b2218980f27, type: 3}
     - target: {fileID: 7809075736653685060, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: m_Name
       value: Special1 Variant

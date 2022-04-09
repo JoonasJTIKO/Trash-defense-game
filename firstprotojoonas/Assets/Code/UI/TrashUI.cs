@@ -19,10 +19,10 @@ namespace towerdefense
 
         [SerializeField]
         private TMP_Text plasticText;
-        public static int bioAmount;
+        public static int metalAmount;
 
         [SerializeField]
-        private TMP_Text bioText;
+        private TMP_Text metalText;
 
         public void AddAmount(int amount, string type)
         {
@@ -30,9 +30,9 @@ namespace towerdefense
             {
                 cardboardAmount++;
             }
-            else if(type == "Bio")
+            else if(type == "Metal")
             {
-                bioAmount++;
+                metalAmount++;
             }
             else if(type == "Plastic")
             {
@@ -54,7 +54,7 @@ namespace towerdefense
             paperAmount = 0;
             cardboardAmount = 0;
             plasticAmount = 0;
-            bioAmount = 0;
+            metalAmount = 0;
             this.updateText();
         }
 
@@ -69,7 +69,7 @@ namespace towerdefense
                     cardboardAmount--;
                     break;
                 case "bio":
-                    bioAmount--;
+                    metalAmount--;
                     break;
                 case "plastic":
                     plasticAmount--;
@@ -81,7 +81,7 @@ namespace towerdefense
 
         private void updateText()
         {
-            bioText.text = bioAmount.ToString();
+            metalText.text = metalAmount.ToString();
             plasticText.text = plasticAmount.ToString();
             cardboardText.text = cardboardAmount.ToString();
             paperText.text = paperAmount.ToString();

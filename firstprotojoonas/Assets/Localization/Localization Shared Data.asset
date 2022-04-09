@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: Continue
     m_Metadata:
       m_Items: []
+  - m_Id: 3694541583015936
+    m_Key: 'Money:'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

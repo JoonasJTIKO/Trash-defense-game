@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 963790888960
-    m_Localized: Start round
+    m_Localized: 'Start '
     m_Metadata:
       m_Items: []
   - m_Id: 1426552643584
@@ -44,6 +44,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2031274811392
     m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3694541583015936
+    m_Localized: 'Money:'
     m_Metadata:
       m_Items: []
   references:

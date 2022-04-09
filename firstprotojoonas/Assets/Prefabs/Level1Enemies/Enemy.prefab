@@ -150,3 +150,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   type: Plastic
+  destroyed: {fileID: 5698788788520127577, guid: 2462b0969654e2d4a9e5a5378fea31c9, type: 3}
+  force: 300

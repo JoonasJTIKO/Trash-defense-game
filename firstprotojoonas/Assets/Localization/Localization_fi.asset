@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 963790888960
-    m_Localized: Aloita kierros
+    m_Localized: Aloita
     m_Metadata:
       m_Items: []
   - m_Id: 1426552643584
@@ -44,6 +44,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2031274811392
     m_Localized: Jatka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3694541583015936
+    m_Localized: 'Rahaa:'
     m_Metadata:
       m_Items: []
   references:

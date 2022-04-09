@@ -64,9 +64,17 @@ PrefabInstance:
       value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: force
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: health
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed
+      value: 
+      objectReference: {fileID: 5382636028912461770, guid: 2039b59096d44f7468f8513096e48b2b, type: 3}
     - target: {fileID: 4095124249828298238, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: speed
       value: 2
