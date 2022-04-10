@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Playermovement.unity
     guid: 5906f1e785518204f8f7a1cfdf5aa978
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Loader.unity
     guid: d510ef45dc8eec5489127b1fba4cf44e
   - enabled: 1

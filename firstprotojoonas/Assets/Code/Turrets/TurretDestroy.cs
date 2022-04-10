@@ -15,7 +15,7 @@ namespace towerdefense
         private Transform parent;
 
         [SerializeField]
-        private float refundAmount;
+        public float refundAmount;
 
         void Awake()
         {

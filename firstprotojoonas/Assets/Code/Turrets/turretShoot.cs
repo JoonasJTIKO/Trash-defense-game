@@ -95,7 +95,7 @@ namespace towerdefense
                 {
                     if (anim != null)
                     {
-                        anim.SetBool("Shoot", true);
+                        anim.SetTrigger("Shoot");
                     }
                     GameObject bulletIns = Instantiate(projectile, (Vector2)transform.position + direction.normalized, transform.rotation);
                     bulletIns.GetComponent<Rigidbody2D>().AddForce(direction * force);

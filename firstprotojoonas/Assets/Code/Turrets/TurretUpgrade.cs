@@ -12,6 +12,7 @@ namespace towerdefense
         private string stat;
 
         private MoneyUI moneyUI;
+        private TurretDestroy destroy;
 
         [SerializeField]
         private int maxUpgrades = 1;
@@ -23,6 +24,7 @@ namespace towerdefense
         {
             turret = GetComponentInParent<turretShoot>();
             moneyUI = FindObjectOfType<MoneyUI>();
+            destroy = GetComponentInParent<TurretDestroy>();
         }
 
         public void Upgrade()
@@ -31,6 +33,7 @@ namespace towerdefense
             {
                 turret.UpgradeStat(stat);
                 moneyUI.SetMoney(price);
+                destroy.refundAmount += price;
                 maxUpgrades--;
             }
         }
