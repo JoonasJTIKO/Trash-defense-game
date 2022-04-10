@@ -19,18 +19,9 @@ namespace towerdefense
             if (col.gameObject.tag == "Player")
             {
                 Debug.Log("asddd111");
-                // playerSpeed = col.gameObject.GetComponent<PlayerMovement>().speed;
-                // speedBoost();
-                Destroy(this);
+                col.gameObject.GetComponent<PlayerMovement>().startSpeedBoost();
+                Destroy(this.gameObject);
             }
         }
-
-        // private IEnumerator speedBoost()
-        // {
-        //     playerSpeed = playerSpeed * 1.4f;
-        //     yield return new WaitForSeconds(4.0f);
-        //     playerSpeed = playerSpeed / 1.4f;
-        //     Debug.Log("Ended :)");
-        // }
     }
 }

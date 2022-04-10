@@ -11,6 +11,9 @@ namespace towerdefense
         Vector2 lastClickedPos;
         bool moving;
 
+        [Range(1.3f,2f)]
+        public float boostAmount;
+
         private float xpositionToFlip;
 
         private GameObject attachedTrash;
@@ -77,10 +80,16 @@ namespace towerdefense
             // xpositionToFlip = null;
         }
 
-        private IEnumerator speedBoost()
+        public void startSpeedBoost()
         {
-            speed = speed * 1.4f;
+            StartCoroutine(speedBoost());
+        }
+
+        public IEnumerator speedBoost()
+        {
+            speed = speed * boostAmount;
             yield return new WaitForSeconds(4.0f);
+            speed = speed / boostAmount;
         }
     }
 }
