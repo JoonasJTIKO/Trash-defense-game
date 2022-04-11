@@ -98,12 +98,40 @@ namespace towerdefense
 
         private void joystickMove()
         {
-            float step = speed * Time.deltaTime;
             moveInput = playerAction.Player.Move.ReadValue<Vector2>();
-            joystickOriginalPosition = joystickOriginalPosition + moveInput;
-            // transform.position = Vector2.MoveTowards(transform.localPosition, moveInput, step);
-            transform.Translate(moveInput * speed * Time.deltaTime);
-            Debug.Log(moveInput);
+            if (moveInput != Vector2.zero)
+            {
+                moving = true;
+                anim.SetBool("Walking", true);
+                if (moveInput.x > 0)
+                {
+                    this.GetComponent<SpriteRenderer>().flipX = false;
+                    if (attachedTrash)
+                    {
+                        attachedTrash.transform.localPosition = new Vector2(0.3f, 0f);
+                    }
+                }
+
+                else if (moveInput.x < 0)
+                {
+                    this.GetComponent<SpriteRenderer>().flipX = true;
+                    if (attachedTrash)
+                    {
+                        attachedTrash.transform.localPosition = new Vector2(-0.3f, 0f);
+                    }    
+                }                
+            }
+
+            if (moveInput == Vector2.zero)
+            {
+                moving = false;
+                anim.SetBool("Walking", false);
+            }
+
+            if (moving)
+            {
+                transform.Translate(moveInput * speed * Time.deltaTime);
+            }
         }
 
         void FixedUpdate()
