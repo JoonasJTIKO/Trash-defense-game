@@ -11,6 +11,17 @@ namespace towerdefense
 
         [SerializeField]
         private GameObject winText;
+
+        [SerializeField]
+        private GameObject levelClearText;
+
+        private SetSpawner spawner;
+        private int wins = 0;
+
+        void Start()
+        {
+            spawner = FindObjectOfType<SetSpawner>();
+        }
         public void Lose()
         {
             if(winText.activeSelf == false)
@@ -21,9 +32,14 @@ namespace towerdefense
 
         public void Win()
         {
-            if(gameOverText.activeSelf == false)
+            if(wins == spawner.MaxRounds - 1 && gameOverText.activeSelf == false)
+            {
+                levelClearText.SetActive(true);
+            }
+            else if(gameOverText.activeSelf == false)
             {
                 winText.SetActive(true);
+                wins++;
             }
         }
     }

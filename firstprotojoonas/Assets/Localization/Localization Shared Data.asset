@@ -47,6 +47,34 @@ MonoBehaviour:
     m_Key: 'Money:'
     m_Metadata:
       m_Items: []
+  - m_Id: 4391781142224896
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391839497576448
+    m_Key: Learn more
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391967130247168
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393394586116096
+    m_Key: Level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393431546322944
+    m_Key: Level 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393432905277440
+    m_Key: Level 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4397776581025792
+    m_Key: Level completed
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

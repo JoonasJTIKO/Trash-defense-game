@@ -17,6 +17,8 @@ namespace towerdefense
         [SerializeField]
         private int maxRounds;
 
+        public int MaxRounds{ get{ return maxRounds; } }
+
         private EnemyCounter counter;
 
         void Start()

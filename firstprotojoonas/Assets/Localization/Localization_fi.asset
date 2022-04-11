@@ -27,11 +27,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 963790888960
-    m_Localized: Aloita
+    m_Localized: Aloita kierros
     m_Metadata:
       m_Items: []
   - m_Id: 1426552643584
-    m_Localized: "H\xE4visit"
+    m_Localized: Kuolit
     m_Metadata:
       m_Items: []
   - m_Id: 1659823054848
@@ -48,6 +48,34 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3694541583015936
     m_Localized: 'Rahaa:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391781142224896
+    m_Localized: Pelaa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391839497576448
+    m_Localized: Opi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391967130247168
+    m_Localized: Asetukset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393394586116096
+    m_Localized: Taso 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393431546322944
+    m_Localized: Taso 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393432905277440
+    m_Localized: Taso 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4397776581025792
+    m_Localized: Taso suoritettu
     m_Metadata:
       m_Items: []
   references:

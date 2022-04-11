@@ -34,6 +34,9 @@ namespace towerdefense
 
         private GameObject placedTurret;
 
+        [SerializeField]
+        private GameObject particle;
+
 
         void Start() 
         {
@@ -52,6 +55,7 @@ namespace towerdefense
             this.gameObject.transform.SetParent(usedTurretPoints.transform);
             ShopUI.GetComponent<ShopUI>().DeactivatePlacePoints();
             moneyUI.SetMoney(prices[objectNumber]);
+            Instantiate(particle, transform.position, transform.rotation);
         }
 
         public void SetObjectNumber(int number)

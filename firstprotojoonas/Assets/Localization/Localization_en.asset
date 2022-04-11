@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 963790888960
-    m_Localized: 'Start '
+    m_Localized: Start round
     m_Metadata:
       m_Items: []
   - m_Id: 1426552643584
@@ -48,6 +48,34 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3694541583015936
     m_Localized: 'Money:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391781142224896
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391839497576448
+    m_Localized: Learn more
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4391967130247168
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393394586116096
+    m_Localized: Level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393431546322944
+    m_Localized: Level 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4393432905277440
+    m_Localized: Level 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4397776581025792
+    m_Localized: Level completed
     m_Metadata:
       m_Items: []
   references:

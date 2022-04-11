@@ -34,7 +34,15 @@ namespace towerdefense
         void Awake()
         {
             anim = GetComponent<Animator>();
+            if(anim == null)
+            {
+                anim = GetComponentInChildren<Animator>();
+            }
             defaultRotate = transform.up;
+            if(anim != null)
+            {
+                Debug.Log("anim got");
+            }
         }
 
         // Update is called once per frame
