@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBoardPrefab: {fileID: 6059848134534779426, guid: db942505b92cc9f419cf5ea8fa613a59, type: 3}
-  bioPrefab: {fileID: 0}
+  metalPrefab: {fileID: 6059848134534779426, guid: 0b476fea3ccc0e045b5f74f05797d443, type: 3}
   plasticPrefab: {fileID: 6059848134534779426, guid: 5551d241eb652d5459ad9a5200afe928, type: 3}
   paperPrefab: {fileID: 6059848134534779426, guid: 11f352dcccb21f0458f04171069de745, type: 3}
   spawnInterval: 0.2

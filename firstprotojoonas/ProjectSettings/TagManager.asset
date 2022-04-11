@@ -20,6 +20,7 @@ TagManager:
   - turretMenu
   - TurretMenu
   - UpgradeTurret
+  - Metal
   layers:
   - Default
   - TransparentFX

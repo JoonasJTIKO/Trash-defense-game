@@ -12,9 +12,9 @@ namespace towerdefense
         [SerializeField]
         public GameObject cardBoardPrefab;
 
-        int bioToSpawn;
+        int metalToSpawn;
         [SerializeField]
-        public GameObject bioPrefab;
+        public GameObject metalPrefab;
 
         int plasticToSpawn;
 
@@ -58,10 +58,10 @@ namespace towerdefense
         {
             trashUI = FindObjectOfType<TrashUI>();
             cardboardToSpawn = TrashUI.cardboardAmount;
-            //bioToSpawn = TrashUI.bioAmount;
+            metalToSpawn = TrashUI.metalAmount;
             plasticToSpawn = TrashUI.plasticAmount;
             paperToSpawn = TrashUI.paperAmount;
-            totalTrash = cardboardToSpawn + /*bioToSpawn +*/ plasticToSpawn + paperToSpawn;
+            totalTrash = cardboardToSpawn + metalToSpawn + plasticToSpawn + paperToSpawn;
             trashList = new GameObject[totalTrash];
             spawnInterval = sortingTimer / totalTrash;
             sceneChangerObject = GameObject.Find("SceneChanger");
@@ -78,11 +78,11 @@ namespace towerdefense
                 trashList[x] = cardBoardPrefab;
                 x++;
             }
-            // for (int i = 0; i < bioToSpawn; i++)
-            // {
-            //     trashList[x] = bioPrefab;
-            //     x++;
-            // }
+            for (int i = 0; i < metalToSpawn; i++)
+            {
+                trashList[x] = metalPrefab;
+                x++;
+            }
             for (int i = 0; i < plasticToSpawn; i++)
             {
                 trashList[x] = plasticPrefab;
@@ -106,7 +106,6 @@ namespace towerdefense
 
         void Update()
         {
-            Debug.Log(sortingTimer);
             sortingTimer -= Time.deltaTime;
             timerText.SetText(sortingTimer.ToString("F1"));
 

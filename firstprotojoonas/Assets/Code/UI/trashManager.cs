@@ -7,7 +7,7 @@ namespace towerdefense
 {
     public class trashManager : MonoBehaviour
     {
-        public enum TrashTypeList { Cardboard, Bio, Plastic, Paper }
+        public enum TrashTypeList { Cardboard, Metal, Plastic, Paper }
         public TrashTypeList trashType;
 
         private MoneyUI ui;
@@ -41,7 +41,7 @@ namespace towerdefense
                 playerScript.setChildObject(this.gameObject);
                 alreadyAttached = true;
             }
-            else if (col.gameObject.tag != "Trash" && col.gameObject.tag != "Player")
+            else if (col.gameObject.tag != "Trash" && col.gameObject.tag != "Player" && col.gameObject.tag != "Turret")
             {
                 //EI Massiii
                 Debug.Log("Wrong bin idiot");
