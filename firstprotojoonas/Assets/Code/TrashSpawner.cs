@@ -99,7 +99,7 @@ namespace towerdefense
         {
             for (int i = 0; i < trashList.Length; i++)
             {
-                Instantiate(trashList[i], new Vector3(Random.Range(-4.5f, 4.5f), Random.Range(-4.5f, 4.5f), 1), Quaternion.identity, this.transform);
+                Instantiate(trashList[i], new Vector3(Random.Range(-5f, 5f), Random.Range(-3.5f, 3.5f), 1), Quaternion.identity, this.transform);
                 yield return new WaitForSeconds(spawnInterval);
             }
         }
