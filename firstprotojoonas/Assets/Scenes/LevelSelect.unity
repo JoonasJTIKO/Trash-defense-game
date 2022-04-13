@@ -3575,6 +3575,7 @@ GameObject:
   - component: {fileID: 2029317559}
   - component: {fileID: 2029317558}
   - component: {fileID: 2029317557}
+  - component: {fileID: 2029317560}
   m_Layer: 5
   m_Name: Level2
   m_TagString: Untagged
@@ -3645,7 +3646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029317558}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029317560}
+        m_TargetAssemblyTypeName: towerdefense.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2029317558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3684,3 +3697,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029317555}
   m_CullTransparentMesh: 1
+--- !u!114 &2029317560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029317555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e86b27a3df12442afdf43b4f2e92db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unloadScene: 1

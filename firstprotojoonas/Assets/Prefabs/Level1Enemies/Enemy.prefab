@@ -152,3 +152,4 @@ MonoBehaviour:
   type: Plastic
   destroyed: {fileID: 5698788788520127577, guid: 2462b0969654e2d4a9e5a5378fea31c9, type: 3}
   force: 300
+  particle: {fileID: 8725200543984306485, guid: 98430e29f84dd9c44886144b4a5ce2ed, type: 3}

@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bea2b241e2aeb4d8fec1796a19d3d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 6613498684640548901, guid: 7056f8da8279745439b9cb536aedb891, type: 3}
+  menu: {fileID: 7620064827926786987, guid: 02a4d8c7f5452bc44b80e45dd88a8e61, type: 3}
 --- !u!114 &2275422296000745011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   refundAmount: 150
+  particle: {fileID: 8725200543984306485, guid: 98430e29f84dd9c44886144b4a5ce2ed, type: 3}
 --- !u!50 &4508336069720256256
 Rigidbody2D:
   serializedVersion: 4

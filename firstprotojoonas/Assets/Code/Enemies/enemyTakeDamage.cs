@@ -22,6 +22,9 @@ namespace towerdefense
         [SerializeField]
         private float force;
 
+        [SerializeField]
+        private GameObject particle;
+
         void Awake()
         {
             pathFollow = GetComponent<followPath>();
@@ -35,6 +38,7 @@ namespace towerdefense
                 enemyCounter.RemoveEnemy(type);
                 Destroy(this.gameObject);
                 GameObject destroyedIns = Instantiate(destroyed, (Vector2)transform.position, transform.rotation);
+                Instantiate(particle, transform.position, transform.rotation);
                 destroyedIns.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 2), 1).normalized * force);
             }
         }

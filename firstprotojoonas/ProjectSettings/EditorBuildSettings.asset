@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: 593eb58fea8b1ac43b5e3eb72605e7dc
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 8b9c56f0a8a8b1c4a87feb037f6a09f8
+  - enabled: 1
     path: Assets/Scenes/PauseMenu.unity
     guid: abc548673e5fc36409e6923ad784e418
   m_configObjects:

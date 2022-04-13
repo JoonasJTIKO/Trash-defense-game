@@ -17,6 +17,9 @@ namespace towerdefense
         [SerializeField]
         public float refundAmount;
 
+        [SerializeField]
+        private GameObject particle;
+
         void Awake()
         {
             usedTurretPoints = GameObject.Find("UsedTurretPoints");
@@ -34,6 +37,7 @@ namespace towerdefense
                 }
             }
             moneyUI.AddMoney(refundAmount);
+            Instantiate(particle, transform.position, transform.rotation);
             Destroy(this.transform.parent.gameObject);
         }
     }
