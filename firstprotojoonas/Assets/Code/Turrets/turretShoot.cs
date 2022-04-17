@@ -30,9 +30,11 @@ namespace towerdefense
         [SerializeField]
         private float force;
         private Vector2 defaultRotate;
+        private AudioSource audioSource;
 
         void Awake()
         {
+            audioSource = GetComponent<AudioSource>();
             anim = GetComponent<Animator>();
             if(anim == null)
             {
@@ -106,7 +108,8 @@ namespace towerdefense
                         anim.SetTrigger("Shoot");
                     }
                     GameObject bulletIns = Instantiate(projectile, (Vector2)transform.position + direction.normalized, transform.rotation);
-                    bulletIns.GetComponent<Rigidbody2D>().AddForce(direction * force);
+                    bulletIns.GetComponent<Rigidbody2D>().AddForce(direction.normalized * force);
+                    audioSource.Play();
                     timeBtwShots = 1 / fireRate;
                 }
                 else

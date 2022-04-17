@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: InitialModule.maxNumParticles
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2806128945813070748, guid: 0bfe79cf068ccfa40949ac7fc701130b, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6086935797141317986, guid: 0bfe79cf068ccfa40949ac7fc701130b, type: 3}
       propertyPath: m_RootOrder
       value: 0

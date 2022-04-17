@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: UVModule.sprites.Array.data[0].sprite
       value: 
       objectReference: {fileID: 21300000, guid: e2954253901e2af4ea922b955ff6d8fc, type: 3}
+    - target: {fileID: 2806128945813070748, guid: 0bfe79cf068ccfa40949ac7fc701130b, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6086935797141317986, guid: 0bfe79cf068ccfa40949ac7fc701130b, type: 3}
       propertyPath: m_RootOrder
       value: 0
