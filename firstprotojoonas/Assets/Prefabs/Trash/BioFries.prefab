@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6059848134534779425}
   - component: {fileID: 6059848134534779427}
   - component: {fileID: 6059848134534779455}
-  - component: {fileID: 8923717906387219461}
+  - component: {fileID: 1374771543791913234}
   m_Layer: 0
-  m_Name: PaperBag
+  m_Name: BioFries
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6059848134534779426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.03, y: 3.39, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 2.09, y: 3.393, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 4a149d5afd67c014c8ec42eb3ab50384, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a190743eda1569a45aaff5daf718a04b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c023ef6f2c8df4d83ffa5393217942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trashType: 3
+  trashType: 4
   rewardAmount: 75
 --- !u!50 &6059848134534779455
 Rigidbody2D:
@@ -120,8 +120,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &8923717906387219461
-CircleCollider2D:
+--- !u!68 &1374771543791913234
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -133,6 +133,20 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01795594, y: 0.013466915}
-  serializedVersion: 2
-  m_Radius: 0.15031679
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.20987755, y: -0.24989283}
+  - {x: 0.10600448, y: -0.25867975}
+  - {x: 0.014926076, y: -0.2594267}
+  - {x: -0.07376355, y: -0.21520638}
+  - {x: -0.070420325, y: -0.115855336}
+  - {x: -0.27161193, y: 0.120114565}
+  - {x: -0.05884123, y: 0.23965907}
+  - {x: 0.26101375, y: 0.082425356}
+  - {x: 0.27972853, y: -0.17929494}
+  - {x: 0.2098776, y: -0.2498928}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

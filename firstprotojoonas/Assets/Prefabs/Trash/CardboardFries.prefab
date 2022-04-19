@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6059848134534779425}
   - component: {fileID: 6059848134534779427}
   - component: {fileID: 6059848134534779455}
-  - component: {fileID: 8923717906387219461}
+  - component: {fileID: -2453020495420214669}
   m_Layer: 0
-  m_Name: PaperBag
+  m_Name: CardboardFries
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6059848134534779426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.03, y: 3.39, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 4a149d5afd67c014c8ec42eb3ab50384, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1cdadc022f26bf4eb2dcaabc9d871cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c023ef6f2c8df4d83ffa5393217942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trashType: 3
+  trashType: 0
   rewardAmount: 75
 --- !u!50 &6059848134534779455
 Rigidbody2D:
@@ -120,8 +120,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &8923717906387219461
-CircleCollider2D:
+--- !u!61 &-2453020495420214669
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -133,6 +133,16 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01795594, y: 0.013466915}
+  m_Offset: {x: -0.0094151795, y: -0.08630639}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.15031679
+  m_Size: {x: 0.32615858, y: 0.38578856}
+  m_EdgeRadius: 0

@@ -94,6 +94,28 @@ namespace towerdefense
             // //     transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
             // // }
             joystickMove();
+            restrictMove();
+        }
+
+        private void restrictMove()
+        {
+            if (this.transform.position.x < -8.5f)
+            {
+                this.transform.position = new Vector3(-8.5f, this.transform.position.y, 0);
+            }
+            if (this.transform.position.x > 8.5f)
+            {
+                this.transform.position = new Vector3(8.5f, this.transform.position.y, 0);
+            }
+
+            if (this.transform.position.y < -4.5f)
+            {
+                this.transform.position = new Vector3(this.transform.position.x, -4.5f, 0);
+            }
+            if (this.transform.position.y > 4.5f)
+            {
+                this.transform.position = new Vector3(this.transform.position.x, 4.5f, 0);
+            }
         }
 
         private void joystickMove()
