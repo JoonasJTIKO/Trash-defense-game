@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7640025261766927682, guid: 0bfe79cf068ccfa40949ac7fc701130b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7781921270095041945, guid: 0bfe79cf068ccfa40949ac7fc701130b, type: 3}
       propertyPath: m_Name
       value: TrashDestroy

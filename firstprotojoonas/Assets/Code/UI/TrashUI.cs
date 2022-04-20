@@ -7,10 +7,10 @@ namespace towerdefense
 {
     public class TrashUI : MonoBehaviour
     {
-        public static int paperAmount;
+        public static int bioAmount;
 
         [SerializeField]
-        private TMP_Text paperText;
+        private TMP_Text bioText;
         public static int cardboardAmount;
 
         [SerializeField]
@@ -38,9 +38,9 @@ namespace towerdefense
             {
                 plasticAmount++;
             }
-            else if(type == "Paper")
+            else if(type == "Bio")
             {
-                paperAmount++;
+                bioAmount++;
             }
             else
             {
@@ -51,7 +51,7 @@ namespace towerdefense
 
         public void Reset()
         {
-            paperAmount = 0;
+            bioAmount = 0;
             cardboardAmount = 0;
             plasticAmount = 0;
             metalAmount = 0;
@@ -62,13 +62,13 @@ namespace towerdefense
         {
             switch(type)
             {
-                case "paper":
-                    paperAmount--;
+                case "bio":
+                    bioAmount--;
                     break;
                 case "cardboard":
                     cardboardAmount--;
                     break;
-                case "bio":
+                case "metal":
                     metalAmount--;
                     break;
                 case "plastic":
@@ -84,7 +84,7 @@ namespace towerdefense
             metalText.text = metalAmount.ToString();
             plasticText.text = plasticAmount.ToString();
             cardboardText.text = cardboardAmount.ToString();
-            paperText.text = paperAmount.ToString();
+            bioText.text = bioAmount.ToString();
         }
     }
 }

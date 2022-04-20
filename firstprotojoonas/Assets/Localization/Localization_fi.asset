@@ -78,5 +78,17 @@ MonoBehaviour:
     m_Localized: Taso suoritettu
     m_Metadata:
       m_Items: []
+  - m_Id: 6552178037219328
+    m_Localized: Taso 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6552223729967104
+    m_Localized: Taso 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7554993568210944
+    m_Localized: Aloitussivu
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

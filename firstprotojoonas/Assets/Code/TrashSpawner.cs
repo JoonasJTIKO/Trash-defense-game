@@ -60,7 +60,7 @@ namespace towerdefense
             cardboardToSpawn = TrashUI.cardboardAmount;
             metalToSpawn = TrashUI.metalAmount;
             plasticToSpawn = TrashUI.plasticAmount;
-            bioToSpawn = TrashUI.paperAmount;
+            bioToSpawn = TrashUI.bioAmount;
             totalTrash = cardboardToSpawn + metalToSpawn + plasticToSpawn + bioToSpawn;
             trashList = new GameObject[totalTrash];
             spawnInterval = sortingTimer / totalTrash;
