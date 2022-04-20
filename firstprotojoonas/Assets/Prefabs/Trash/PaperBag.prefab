@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c023ef6f2c8df4d83ffa5393217942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trashType: 3
+  trashType: 0
   rewardAmount: 75
 --- !u!50 &6059848134534779455
 Rigidbody2D:
