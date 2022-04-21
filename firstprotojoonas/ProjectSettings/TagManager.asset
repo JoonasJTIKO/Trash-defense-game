@@ -21,6 +21,7 @@ TagManager:
   - TurretMenu
   - UpgradeTurret
   - Metal
+  - SmallBullet
   layers:
   - Default
   - TransparentFX

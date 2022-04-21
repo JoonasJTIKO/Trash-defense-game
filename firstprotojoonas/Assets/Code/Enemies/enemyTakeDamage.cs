@@ -7,12 +7,12 @@ namespace towerdefense
     public class enemyTakeDamage : MonoBehaviour
     {
         [SerializeField]
-        private int health;
+        private float health;
 
         private followPath pathFollow;
 
         private EnemyCounter enemyCounter;
-        
+
         [SerializeField]
         private string type;
 
@@ -49,6 +49,10 @@ namespace towerdefense
             {
                 health--;
             }
+            if (col.gameObject.tag == "SmallBullet")
+            {
+                health -= 0.75F;
+            }
             if (col.gameObject.tag == "Melee")
             {
                 health--;
@@ -59,7 +63,7 @@ namespace towerdefense
         {
             if (col.gameObject.tag == "SlowingBullet")
             {
-                pathFollow.SetSpeed(2,3);
+                pathFollow.SetSpeed(2, 3);
             }
         }
 
