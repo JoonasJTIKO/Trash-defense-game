@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: Main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 8307167027421184
+    m_Key: Time's up
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

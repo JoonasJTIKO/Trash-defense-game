@@ -90,5 +90,9 @@ MonoBehaviour:
     m_Localized: Main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 8307167027421184
+    m_Localized: Time's up!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
