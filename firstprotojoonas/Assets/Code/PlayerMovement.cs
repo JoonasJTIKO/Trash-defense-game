@@ -12,9 +12,6 @@ namespace towerdefense
         Vector2 lastClickedPos;
         bool moving;
 
-        [SerializeField]
-        private bool usingJoystick = true;
-
         private Vector2 moveInput;
 
         [Range(1.3f,2f)]
