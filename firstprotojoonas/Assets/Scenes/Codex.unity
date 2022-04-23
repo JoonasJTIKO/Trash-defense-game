@@ -8703,6 +8703,7 @@ GameObject:
   - component: {fileID: 350423158}
   - component: {fileID: 350423160}
   - component: {fileID: 350423159}
+  - component: {fileID: 350423161}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8749,14 +8750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Metallij\xE4tteeseen kuuluu take-away ruokaa tilatessa usein alumiinivuoat
-    ja \u2013foliot. Elintarvikkeita sis\xE4lt\xE4neet metallipakkaukset on suositeltavaa
-    huuhtoa kylm\xE4ll\xE4 vedell\xE4 j\xE4\xE4mien poistamiseksi ennen lajittelua.
-    \r\n\r\nMetallij\xE4te toimitetaan koti- ja ulkomaisen metalliteollisuuden raaka-aineeksi.
-    Kierr\xE4tysmetallista valmistetaan sek\xE4 uusia metallipakkauksia ett\xE4 muita
-    metallituotteita. Alumiinia voidaan kierr\xE4tt\xE4\xE4 loputtomasti kest\xE4vyyden
-    heikentym\xE4tt\xE4. Kaikesta tuotetusta alumiinista 75 prosenttia on edelleen
-    k\xE4yt\xF6ss\xE4. "
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8833,6 +8827,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350423157}
   m_CullTransparentMesh: 1
+--- !u!114 &350423161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350423157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:5038b21455c2d144d88ac398130b5582
+    m_TableEntryReference:
+      m_KeyId: 8045570504122368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 350423159}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &354044506
 GameObject:
   m_ObjectHideFlags: 0
@@ -10044,6 +10077,7 @@ GameObject:
   - component: {fileID: 395675909}
   - component: {fileID: 395675911}
   - component: {fileID: 395675910}
+  - component: {fileID: 395675912}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -10090,19 +10124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kierr\xE4tyksell\xE4 tarkoitetaan j\xE4tteiden hy\xF6tyk\xE4ytt\xF6\xE4
-    uusien tuotteiden valmistuksessa, kun lajittelee j\xE4tteet oikein, niiden materiaaleista
-    valmistetaan uusia tavaroita ihmisten arkeen. Kierr\xE4tys v\xE4hent\xE4\xE4
-    raaka-aineiden ja energian kulutusta ja n\xE4in ollen s\xE4\xE4st\xE4\xE4 luontoa,
-    lis\xE4ksi tarve k\xE4ytt\xE4\xE4 uutta materiaalia tuotteiden valmistamiseen
-    v\xE4henee.  \r\n\nKierr\xE4tysmateriaaleista valmistettujen tuotteiden ymp\xE4rist\xF6jalanj\xE4lki
-    on huomattavasti pienempi, kuin uusien tuotteiden. Pakkausmateriaali kiert\xE4\xE4
-    yhteiskunnassa.  \r\nMetallipakkausj\xE4tett\xE4 ja pienmetallia voidaan k\xE4ytt\xE4\xE4
-    esimerkiksi py\xF6r\xE4nrungoissa, lasipakkauksista tehd\xE4\xE4n uusia lasipakkauksia
-    ja kartongista valmistetaan monenlaisia hylsyj\xE4 tai esimerkiksi leikkipuistokalusteissa
-    k\xE4ytetty\xE4 laminaattia.  \r\nTake-away pakkauksen, niin kuin kaiken muunkin
-    j\xE4tteen, kierr\xE4tys on konkreettinen ilmastoteko, jonka kuka tahansa voi
-    tehd\xE4!  "
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10179,6 +10201,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395675908}
   m_CullTransparentMesh: 1
+--- !u!114 &395675912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395675908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:5038b21455c2d144d88ac398130b5582
+    m_TableEntryReference:
+      m_KeyId: 8052854412140544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 395675910}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &399325241
 GameObject:
   m_ObjectHideFlags: 0
@@ -17751,6 +17812,7 @@ GameObject:
   - component: {fileID: 712134594}
   - component: {fileID: 712134596}
   - component: {fileID: 712134595}
+  - component: {fileID: 712134597}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -17797,17 +17859,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Muovia k\xE4ytet\xE4\xE4n takeaway ruoan yhteydess\xE4 paljon. Muovia
-    ovat esimerkiksi useimmat pillit, pillikannet ja sek\xE4 kertak\xE4ytt\xF6iset
-    aterimet. Lis\xE4ksi jotkut ruokapakkaukset tehd\xE4\xE4n my\xF6s usein muovista,
-    ja jotkut palvelut toimittavat ruokaa muovikasseissa.  \r\n\r\nSuurin osa muovista
-    on kierr\xE4tett\xE4viss\xE4 muovinker\xE4yspisteill\xE4, mutta t\xE4llaisiin
-    ker\xE4yspisteisiin ei saa laittaa esimerkiksi PVC- muovia. PVC- muovin tunnistaa
-    pakkauksessa olevasta merkist\xE4, jossa on kolmion sis\xE4ll\xE4 numero 3. Ker\xE4ykseen
-    ei my\xF6sk\xE4\xE4n saa laittaa kovaa muovia, kuten esimerkiksi \xE4mp\xE4ri,
-    ja kierr\xE4tett\xE4v\xE4n muovin t\xE4ytyy olla puhdasta. \r\n\r\nKierr\xE4tyksess\xE4
-    muovi lajitellaan, ja siit\xE4 tehd\xE4\xE4n erilaisia uusia muovituotteita,
-    kuten muovikasseja, j\xE4tes\xE4kkej\xE4 etc. "
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17884,6 +17936,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712134593}
   m_CullTransparentMesh: 1
+--- !u!114 &712134597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712134593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:5038b21455c2d144d88ac398130b5582
+    m_TableEntryReference:
+      m_KeyId: 8028770081038336
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 712134595}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &713183951
 GameObject:
   m_ObjectHideFlags: 0
@@ -41773,6 +41864,7 @@ GameObject:
   - component: {fileID: 1686685556}
   - component: {fileID: 1686685558}
   - component: {fileID: 1686685557}
+  - component: {fileID: 1686685559}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -41819,18 +41911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bioj\xE4tteeseen sis\xE4ltyy tietenkin kaikki ruuant\xE4hteet ja muut
-    poisheitett\xE4v\xE4t ruuat. Mukaan lukeutuu my\xF6s hedelmien kuoret ja muut
-    ruuanvalmistelusta ylij\xE4\xE4v\xE4t osat, kuten kalanperkuun tuottamat j\xE4tteet.
-    Ruokaa tilatessa ja ravintoloissa ruokaillessa tulee aterian mukana yleens\xE4
-    servietti tai lautasliina, ja ne my\xF6s kuuluvat bioj\xE4tteeseen. Jos juo kahvia
-    tai teet\xE4, on t\xE4rke\xE4 muistaa lajitella suodatin- ja teepussit bioj\xE4tteeseen.
-    \r\n\r\nKierr\xE4tetylle bioj\xE4tteelle voidaan tehd\xE4 kaksi toimenpidett\xE4.
-    Se voidaan joko muuntaa biokaasuksi, jota k\xE4ytet\xE4\xE4n polttoaineena, tai
-    se voidaan kompostoida, ja siit\xE4 syntyv\xE4\xE4 multaa voidaan hy\xF6dynt\xE4\xE4
-    esimerkiksi maataloudessa. Jos bioj\xE4tett\xE4 ei kierr\xE4tet\xE4 oikeaoppisesti,
-    siit\xE4 syntyy maapallolle haitallisia kasvihuonekaasuja, joten on t\xE4rke\xE4\xE4
-    aina kierr\xE4tt\xE4\xE4 bioj\xE4te mahdollisuuksien mukaan. "
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -41907,6 +41988,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686685555}
   m_CullTransparentMesh: 1
+--- !u!114 &1686685559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686685555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:5038b21455c2d144d88ac398130b5582
+    m_TableEntryReference:
+      m_KeyId: 8038204245139456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1686685557}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &1687520687
 GameObject:
   m_ObjectHideFlags: 0
@@ -52421,6 +52541,7 @@ GameObject:
   - component: {fileID: 2137062592}
   - component: {fileID: 2137062594}
   - component: {fileID: 2137062593}
+  - component: {fileID: 2137062595}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -52467,17 +52588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aaltopahvi-, kartonki-, paperi- ja nestekartonkipakkaukset sek\xE4 teollisuuden
-    kuitupakkaukset ovat uusiutuvasta puukuidusta valmistettuja kaupan ja teollisuuden
-    pakkauksia sek\xE4 kuluttajapakkauksia. Kuitupakkauksista k\xE4ytet\xE4\xE4n
-    my\xF6s nimityst\xE4 paperi- ja kartonkipakkaukset.\n\r\nEnnen kierr\xE4tt\xE4mist\xE4
-    kartonkipakkaukset tulisi huuhdella/puhdistaa, kuivata ja litist\xE4\xE4.  \r\n\r\nTake-away
-    ruokaa tilatessa muun muassa pizzalaatikot, hampurilais- ja ranskalaispakkaukset
-    sek\xE4 paperipussi, johon tilaus on pakattu, kuuluu lajitella kartonkikierr\xE4tykseen.
-    \r\n\r\nKierr\xE4tetty kartonki kuljetetaan kartonkitehtaalle, jossa siit\xE4
-    erotellaan muovipinnoitteet energiahy\xF6tyk\xE4ytt\xF6\xF6n ja alumiinipinnoitteet
-    materiaalikiertoon. J\xE4ljelle j\xE4\xE4nytt\xE4 kartonkikuitua k\xE4ytet\xE4\xE4n
-    aaltopahvin, pakkauskartongin, kirjekuorien, laminaattipaperin ja hylsyjen valmistuksessa."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -52554,6 +52665,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137062591}
   m_CullTransparentMesh: 1
+--- !u!114 &2137062595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137062591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:5038b21455c2d144d88ac398130b5582
+    m_TableEntryReference:
+      m_KeyId: 8035041077223424
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2137062593}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &2138523823
 GameObject:
   m_ObjectHideFlags: 0

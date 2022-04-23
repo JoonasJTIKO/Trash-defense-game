@@ -90,6 +90,96 @@ MonoBehaviour:
     m_Localized: Aloitussivu
     m_Metadata:
       m_Items: []
+  - m_Id: 8027482672979968
+    m_Localized: Paina "valitse tykki" aloittaaksesi puolustusten rakentaminen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8027804380291072
+    m_Localized: Kokeile rakentaa muita puolustuksia. Pelin jatkuessa ansaitset rahaa
+      tornien ostamiseen ja parantamiseen. Voit painaa tornia ja parantaa tai tuhota
+      sen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8028770081038336
+    m_Localized: "Muovia k\xE4ytet\xE4\xE4n takeaway ruoan yhteydess\xE4 paljon.
+      Muovia ovat esimerkiksi useimmat pillit, pillikannet ja sek\xE4 kertak\xE4ytt\xF6iset
+      aterimet. Lis\xE4ksi jotkut ruokapakkaukset tehd\xE4\xE4n my\xF6s usein muovista,
+      ja jotkut palvelut toimittavat ruokaa muovikasseissa.  \r\n\r\nSuurin osa muovista
+      on kierr\xE4tett\xE4viss\xE4 muovinker\xE4yspisteill\xE4, mutta t\xE4llaisiin
+      ker\xE4yspisteisiin ei saa laittaa esimerkiksi PVC- muovia. PVC- muovin tunnistaa
+      pakkauksessa olevasta merkist\xE4, jossa on kolmion sis\xE4ll\xE4 numero 3.
+      Ker\xE4ykseen ei my\xF6sk\xE4\xE4n saa laittaa kovaa muovia, kuten esimerkiksi
+      \xE4mp\xE4ri, ja kierr\xE4tett\xE4v\xE4n muovin t\xE4ytyy olla puhdasta. \r\n\r\nKierr\xE4tyksess\xE4
+      muovi lajitellaan, ja siit\xE4 tehd\xE4\xE4n erilaisia uusia muovituotteita,
+      kuten muovikasseja, j\xE4tes\xE4kkej\xE4 etc. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8035041077223424
+    m_Localized: "Aaltopahvi-, kartonki-, paperi- ja nestekartonkipakkaukset sek\xE4
+      teollisuuden kuitupakkaukset ovat uusiutuvasta puukuidusta valmistettuja kaupan
+      ja teollisuuden pakkauksia sek\xE4 kuluttajapakkauksia. Kuitupakkauksista k\xE4ytet\xE4\xE4n
+      my\xF6s nimityst\xE4 paperi- ja kartonkipakkaukset.\n\r\nEnnen kierr\xE4tt\xE4mist\xE4
+      kartonkipakkaukset tulisi huuhdella/puhdistaa, kuivata ja litist\xE4\xE4. 
+      \r\n\r\nTake-away ruokaa tilatessa muun muassa pizzalaatikot, hampurilais-
+      ja ranskalaispakkaukset sek\xE4 paperipussi, johon tilaus on pakattu, kuuluu
+      lajitella kartonkikierr\xE4tykseen. \r\n\r\nKierr\xE4tetty kartonki kuljetetaan
+      kartonkitehtaalle, jossa siit\xE4 erotellaan muovipinnoitteet energiahy\xF6tyk\xE4ytt\xF6\xF6n
+      ja alumiinipinnoitteet materiaalikiertoon. J\xE4ljelle j\xE4\xE4nytt\xE4 kartonkikuitua
+      k\xE4ytet\xE4\xE4n aaltopahvin, pakkauskartongin, kirjekuorien, laminaattipaperin
+      ja vessapaperihylsyjen valmistuksessa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8038204245139456
+    m_Localized: "Bioj\xE4tteeseen sis\xE4ltyy tietenkin kaikki ruuant\xE4hteet ja
+      muut poisheitett\xE4v\xE4t ruuat. Mukaan lukeutuu my\xF6s hedelmien kuoret
+      ja muut ruuanvalmistelusta ylij\xE4\xE4v\xE4t osat, kuten kalanperkuun tuottamat
+      j\xE4tteet. Ruokaa tilatessa ja ravintoloissa ruokaillessa tulee aterian mukana
+      yleens\xE4 servietti tai lautasliina, ja ne my\xF6s kuuluvat bioj\xE4tteeseen.
+      Jos juo kahvia tai teet\xE4, on t\xE4rke\xE4 muistaa lajitella suodatin- ja
+      teepussit bioj\xE4tteeseen. \r\n\r\nKierr\xE4tetylle bioj\xE4tteelle voidaan
+      tehd\xE4 kaksi toimenpidett\xE4. Se voidaan joko muuntaa biokaasuksi, jota
+      k\xE4ytet\xE4\xE4n polttoaineena, tai se voidaan kompostoida, ja siit\xE4 syntyv\xE4\xE4
+      multaa voidaan hy\xF6dynt\xE4\xE4 esimerkiksi maataloudessa. Jos bioj\xE4tett\xE4
+      ei kierr\xE4tet\xE4 oikeaoppisesti, siit\xE4 syntyy maapallolle haitallisia
+      kasvihuonekaasuja, joten on t\xE4rke\xE4\xE4 aina kierr\xE4tt\xE4\xE4 bioj\xE4te
+      mahdollisuuksien mukaan. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8045570504122368
+    m_Localized: "Metallij\xE4tteeseen kuuluu take-away ruokaa tilatessa usein alumiinivuoat
+      ja \u2013foliot. Elintarvikkeita sis\xE4lt\xE4neet metallipakkaukset on suositeltavaa
+      huuhtoa kylm\xE4ll\xE4 vedell\xE4 j\xE4\xE4mien poistamiseksi ennen lajittelua.
+      \r\n\r\nMetallij\xE4te toimitetaan koti- ja ulkomaisen metalliteollisuuden
+      raaka-aineeksi. Kierr\xE4tysmetallista valmistetaan sek\xE4 uusia metallipakkauksia
+      ett\xE4 muita metallituotteita. Alumiinia voidaan kierr\xE4tt\xE4\xE4 loputtomasti
+      kest\xE4vyyden heikentym\xE4tt\xE4. Kaikesta tuotetusta alumiinista 75 prosenttia
+      on edelleen k\xE4yt\xF6ss\xE4. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8052854412140544
+    m_Localized: "Kierr\xE4tyksell\xE4 tarkoitetaan j\xE4tteiden hy\xF6tyk\xE4ytt\xF6\xE4
+      uusien tuotteiden valmistuksessa. Kun lajittelee j\xE4tteet oikein, niiden
+      materiaaleista valmistetaan uusia tavaroita ihmisten arkeen. Kierr\xE4tys v\xE4hent\xE4\xE4
+      raaka-aineiden ja energian kulutusta ja n\xE4in ollen s\xE4\xE4st\xE4\xE4 luontoa,
+      lis\xE4ksi tarve k\xE4ytt\xE4\xE4 uutta materiaalia tuotteiden valmistamiseen
+      v\xE4henee.  \r\n\nKierr\xE4tysmateriaaleista valmistettujen tuotteiden ymp\xE4rist\xF6jalanj\xE4lki
+      on huomattavasti pienempi, kuin uusien tuotteiden. Pakkausmateriaali kiert\xE4\xE4
+      yhteiskunnassa.  \r\nMetallipakkausj\xE4tett\xE4 ja pienmetallia voidaan k\xE4ytt\xE4\xE4
+      esimerkiksi py\xF6r\xE4nrungoissa, lasipakkauksista tehd\xE4\xE4n uusia lasipakkauksia
+      ja kartongista valmistetaan monenlaisia hylsyj\xE4 tai esimerkiksi leikkipuistokalusteissa
+      k\xE4ytetty\xE4 laminaattia.  \r\nTake-away pakkauksen, niin kuin kaiken muunkin
+      j\xE4tteen, kierr\xE4tys on konkreettinen ilmastoteko, jonka kuka tahansa voi
+      tehd\xE4!  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8669890318295040
+    m_Localized: Loputtomat kierrokset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8670640175964160
+    m_Localized: Normaalit kierrokset
+    m_Metadata:
+      m_Items: []
   - m_Id: 8307167027421184
     m_Localized: Aika loppui!
     m_Metadata:

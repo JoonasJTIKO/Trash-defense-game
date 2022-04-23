@@ -87,6 +87,42 @@ MonoBehaviour:
     m_Key: Main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 8027482672979968
+    m_Key: Tutorial 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8027804380291072
+    m_Key: Tutorial 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8028770081038336
+    m_Key: Plastic codex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8035041077223424
+    m_Key: Cardboard codex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8038204245139456
+    m_Key: Bio codex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8045570504122368
+    m_Key: Metal codex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8052854412140544
+    m_Key: Recycling codex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8669890318295040
+    m_Key: Unlimited rounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8670640175964160
+    m_Key: Standard rounds
+    m_Metadata:
+      m_Items: []
   - m_Id: 8307167027421184
     m_Key: Time's up
     m_Metadata:

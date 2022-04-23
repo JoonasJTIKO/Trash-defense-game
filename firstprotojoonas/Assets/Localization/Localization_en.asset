@@ -90,6 +90,114 @@ MonoBehaviour:
     m_Localized: Main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 8027482672979968
+    m_Localized: Tap on "select a tower" to start building your defenses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8027804380291072
+    m_Localized: Try building more defenses. As the game progresses you will earn
+      money to spend on towers and upgrades. You can tap on a tower to upgrade or
+      refund it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8028770081038336
+    m_Localized: 'Plastic is commonly used in the take-away industry. Most straws,
+      cup lids and single use utensils are made from plastic. Additionally, some
+      food packaging is often made using plastic, and some services deliver food
+      using plastic bags.
+
+
+      Most plastic can be recycled at plastic recycling
+      points, but for example PVC- plastic can not be recycled this way. PVC- plastic
+      is recognized by the triangle symbol with a 3 inside it on the packaging. Hard
+      plastic, such as a bucket can also not be recycled this way, and plastic must
+      be clean before recycling.
+
+
+      During recycling plastic is sorted, and
+      it is used to make for example plastic bags and trash bags.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8035041077223424
+    m_Localized: 'Cushion board-, cardboard-, paper- and liquid board packagin as
+      well as industrial fiber packaging are industrial  and consumer packaging made
+      using renewable woodfiber. Fiber packagin is also called paper- and cardboard
+      packaging.
+
+
+
+      Before recycling cardboard packaging should be cleaned,
+      dried and flattened.
+
+
+
+      When ordering take-away, for example pizza boxes,
+      burger- and french fry packaging and the paper bag that the order comes in
+      are to be recycled as cardboard.
+
+
+
+      Recycled cardboard is transported
+      to a cardboard factory, where plastic coating is separated for use in energy
+      production, and aluminium coating for recycling purposes. The leftover cardboardfiber
+      is used to produce cushion board, packaging cardboard, envelopes, laminated
+      paper and toilet paper rolls.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8038204245139456
+    m_Localized: 'Organic waste of course includes food leftovers and other throwaway
+      food items. This also includes fruit peels and other things left over from
+      preparing food, such as the waste left from fish cleaning. When ordering food
+      or dining at restaurants a napkin is most often included, and those also should
+      be recycled alongside organic waste. If you drink coffee or tee, it is important
+      to remember to recycle coffee filters and tea bags as organic waste.
+
+
+      Two
+      things can be done to recycled organic waste. It can either be turned into
+      biogas, which is used as fuel, or it can be composted, and the resulting soil
+      can be used in for example agriculture. If organic waste is not recycled correctly,
+      it will produce greenhouse gasses that are harmful to the planet, which is
+      why it is always important to recycle organic waste if possible.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8045570504122368
+    m_Localized: 'When ordering take-away, it sometimes comes with aluminium packaging
+      and aluminium foil, which are considered metal waste. Metal packaging for food
+      should be washed before recycling.
+
+
+      Metal waste is delivered to be used
+      as raw material both in Finland and abroad. Recycled metal is used for new
+      metal packaging and other products as well. Aluminium can be recycled endlessly
+      without it weakening. Of all the aluminium ever produced about 75% is still
+      in use today.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8052854412140544
+    m_Localized: "Recycling means using waste in the production of new products.
+      When waste is sorted correctly, they are used to make new things used in everyday
+      life. Recycling reduces raw material- and energy consumption and thus helps
+      nature. Additionally the need to use newly harvested material to produce things
+      lessens.\n\nThe environmental footprint of products made with recycled mateiral
+      is significantly smaller than other products. Packaging material circulates
+      in society. Metal packaging waste and other small metal can be used for example
+      in bicycles, glass packaging is often reused and cardboard is used for various
+      spools and for instance the laminate used in playground attractions. \nJust
+      like all other waste, the recycling of take-away packaging is a concrete environmental
+      act that anyone can make!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8669890318295040
+    m_Localized: Unlimited rounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8670640175964160
+    m_Localized: Standard rounds
+    m_Metadata:
+      m_Items: []
   - m_Id: 8307167027421184
     m_Localized: Time's up!
     m_Metadata:

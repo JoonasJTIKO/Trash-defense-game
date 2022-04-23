@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refundAmount: 150
   particle: {fileID: 8725200543984306485, guid: 98430e29f84dd9c44886144b4a5ce2ed, type: 3}
+  sound: {fileID: 2152399217268691195, guid: c0ea6f4a1cd84c844a86dc9662e2cad9, type: 3}
 --- !u!50 &4508336069720256256
 Rigidbody2D:
   serializedVersion: 4

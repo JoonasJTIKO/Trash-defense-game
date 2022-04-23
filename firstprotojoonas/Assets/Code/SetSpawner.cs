@@ -17,7 +17,12 @@ namespace towerdefense
         [SerializeField]
         private int maxRounds;
 
+        [SerializeField]
+        private bool endless = false;
+
         public int MaxRounds{ get{ return maxRounds; } }
+
+        public bool Endless{ get{ return endless; } }
 
         private EnemyCounter counter;
 
@@ -31,7 +36,7 @@ namespace towerdefense
             spawnAmount = spawners[index].GetComponent<spawner>().spawnAmount;
             counter.maxEnemyCount = spawnAmount;
             spawners[index].SetActive(true);
-            if(index != maxRounds - 1)
+            if(index != maxRounds - 1 && !endless)
             {
                 index++;
             }

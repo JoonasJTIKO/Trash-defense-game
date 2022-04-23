@@ -35,12 +35,26 @@ namespace towerdefense
 		[SerializeField]
 		private int[] specialTimes;
 
+		[SerializeField, Tooltip("use to determine the time between special spawns in endless mode")]
+		private int specialTime = 5;
+
 		private int specialIndex = 0;
 
 		private GameObject spawnedObject;
 
+		[SerializeField, Tooltip("how many more enemies to be spawned each round")]
+		private int roundIncrease = 0;
+
+		private SetSpawner setSpawner;
+		private int originalSpecialTime;
+
+		void Start()
+		{
+			setSpawner = GetComponentInParent<SetSpawner>();
+		}
 		void Awake()
 		{	
+			originalSpecialTime = specialTime;
 			originalSpawnAmount = spawnAmount;
 			spawnIndex = spawnAmount - 1;
 			timer = initialWait + Random.Range(-timerOffset, timerOffset);
@@ -78,19 +92,20 @@ namespace towerdefense
 
 		private void OnDisable()
 		{
-			originalSpawnAmount = originalSpawnAmount + prefab.Count;
-			spawnAmount = originalSpawnAmount;
+			spawnAmount = originalSpawnAmount + roundIncrease;
+			originalSpawnAmount = spawnAmount;
 			spawnIndex = spawnAmount - 1;
 			timer = initialWait + Random.Range(-timerOffset, timerOffset);
-			if(spawnTime > 0)
+			if(spawnTime > 0.3F)
 			{
-				spawnTime = spawnTime - 0.25f;
+				spawnTime = spawnTime - 0.1f;
 			}
+			specialTime = originalSpecialTime;
 		}
 
 		private void Spawn()
 		{
-			if(spawnAmount == originalSpawnAmount - (specialTimes[specialIndex] - 1))
+			if(!setSpawner.Endless && spawnAmount == originalSpawnAmount - (specialTimes[specialIndex] - 1))
 			{
 				spawnedObject = Instantiate(specialPrefab[specialIndex], transform.position, transform.rotation);
 				spawnedObject.transform.SetParent(parentTest.transform);
@@ -98,6 +113,20 @@ namespace towerdefense
 				{
 					specialIndex++;
 				}
+			}
+			else if(setSpawner.Endless && spawnAmount == originalSpawnAmount - (specialTime - 1))
+			{
+				spawnedObject = Instantiate(specialPrefab[specialIndex], transform.position, transform.rotation);
+				spawnedObject.transform.SetParent(parentTest.transform);
+				if(specialIndex < specialPrefab.Length - 1)
+				{
+					specialIndex++;
+				}
+				else if(specialIndex == specialPrefab.Length - 1)
+				{
+					specialIndex = 0;
+				}
+				specialTime += originalSpecialTime;
 			}
 			else
 			{

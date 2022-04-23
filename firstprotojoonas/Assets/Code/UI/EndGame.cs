@@ -17,10 +17,15 @@ namespace towerdefense
 
         private SetSpawner spawner;
         private int wins = 0;
+        private bool endless = false;
 
         void Start()
         {
             spawner = FindObjectOfType<SetSpawner>();
+            if(spawner.Endless == true)
+            {
+
+            }
         }
         public void Lose()
         {
@@ -32,14 +37,25 @@ namespace towerdefense
 
         public void Win()
         {
-            if(wins == spawner.MaxRounds - 1 && gameOverText.activeSelf == false)
+            if(!endless)
             {
-                levelClearText.SetActive(true);
+                if(wins == spawner.MaxRounds - 1 && gameOverText.activeSelf == false)
+                {
+                    levelClearText.SetActive(true);
+                }
+                else if(gameOverText.activeSelf == false)
+                {
+                    winText.SetActive(true);
+                    wins++;
+                }
             }
-            else if(gameOverText.activeSelf == false)
+            else if(endless)
             {
-                winText.SetActive(true);
-                wins++;
+                if(gameOverText.activeSelf == false)
+                {
+                    winText.SetActive(true);
+                    wins++;
+                }
             }
         }
     }
