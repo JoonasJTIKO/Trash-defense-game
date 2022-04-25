@@ -44,5 +44,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 3
+  initialWait: 0
   timerOffset: 0
-  prefab: {fileID: 3929084115476213237, guid: f366e8210344ecd4fa7f6ae4c289c5a4, type: 3}
+  prefab:
+  - {fileID: 7809075736653685060, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+  - {fileID: 4202726542104557744, guid: 0adf2990cc616524ca71cd0288bc4a97, type: 3}
+  - {fileID: 5018251056624681202, guid: c8a97b5dad1a0a04e8f49f1821a0b28d, type: 3}
+  - {fileID: 2779947109264101304, guid: abddb1965d446f94cb1cfc3f4e2d6b2b, type: 3}
+  - {fileID: 4691043739509593191, guid: a52c59eef57740a40a564dd4c617e71b, type: 3}
+  - {fileID: 6378469482856046501, guid: 2ac627753de3555409dab90b3bc851f8, type: 3}
+  parentTest: {fileID: 0}
+  spawnAmount: 0
+  specialPrefab: []
+  specialTimes: 
+  specialTime: 5
+  roundIncrease: 0

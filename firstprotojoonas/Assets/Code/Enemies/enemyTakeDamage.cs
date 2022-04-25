@@ -17,13 +17,16 @@ namespace towerdefense
         private string type;
 
         [SerializeField]
-        private GameObject destroyed;
+        private GameObject destroyed1;
+
+        [SerializeField]
+        private GameObject destroyed2;
 
         [SerializeField]
         private float force;
 
         [SerializeField]
-        private GameObject particle;
+        private GameObject particle1;
 
         void Awake()
         {
@@ -37,9 +40,17 @@ namespace towerdefense
             {
                 enemyCounter.RemoveEnemy(type);
                 Destroy(this.gameObject);
-                GameObject destroyedIns = Instantiate(destroyed, (Vector2)transform.position, transform.rotation);
-                Instantiate(particle, transform.position, transform.rotation);
-                destroyedIns.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 2), 1).normalized * force);
+                if(destroyed1 != null)
+                {
+                    GameObject destroyedIns = Instantiate(destroyed1, (Vector2)transform.position, transform.rotation);
+                    destroyedIns.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1F, 2F), 1).normalized * force);
+                }
+                if(destroyed2 != null)
+                {
+                    GameObject destroyedIns2 = Instantiate(destroyed2, (Vector2)transform.position, transform.rotation);
+                    destroyedIns2.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1F, 2F), 1).normalized * force);
+                }
+                Instantiate(particle1, transform.position, transform.rotation);
             }
         }
 

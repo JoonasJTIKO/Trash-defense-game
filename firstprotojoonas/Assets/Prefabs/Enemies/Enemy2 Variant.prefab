@@ -79,6 +79,18 @@ PrefabInstance:
       propertyPath: destroyed
       value: 
       objectReference: {fileID: 5072690962381176889, guid: 22d8a510c44b68a408a962764482025d, type: 3}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: particle1
+      value: 
+      objectReference: {fileID: 8725200543984306485, guid: 98430e29f84dd9c44886144b4a5ce2ed, type: 3}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed1
+      value: 
+      objectReference: {fileID: 5072690962381176889, guid: 22d8a510c44b68a408a962764482025d, type: 3}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed2
+      value: 
+      objectReference: {fileID: 6361575664163164151, guid: ec1a865e0e32a6641bac54ef5c32a2ae, type: 3}
     - target: {fileID: 4095124249828298238, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: speed
       value: 2

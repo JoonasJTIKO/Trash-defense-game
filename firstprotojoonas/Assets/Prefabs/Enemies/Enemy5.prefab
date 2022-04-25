@@ -63,6 +63,14 @@ PrefabInstance:
       propertyPath: destroyed
       value: 
       objectReference: {fileID: 5736837382395984729, guid: 620071ea527d8b146868751ed072ba4a, type: 3}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed1
+      value: 
+      objectReference: {fileID: 5736837382395984729, guid: 620071ea527d8b146868751ed072ba4a, type: 3}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed2
+      value: 
+      objectReference: {fileID: 913097581939843145, guid: 4ef4e34f33365dd499933fe6711ce755, type: 3}
     - target: {fileID: 7809075736653685060, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: m_Name
       value: Enemy5

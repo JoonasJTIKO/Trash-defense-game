@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SmallBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 4857828362695500644, guid: 921d39273c4887b40a577cbdf4dbf0a2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b89cbdb56de9978459cdc437e7e66272, type: 3}
     - target: {fileID: 7799800086746444920, guid: 921d39273c4887b40a577cbdf4dbf0a2, type: 3}
       propertyPath: m_RootOrder
       value: 0

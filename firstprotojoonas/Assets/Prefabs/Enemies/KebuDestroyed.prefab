@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6177970088975396156
+--- !u!1001 &5390290765552967792
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5072690962381176889, guid: 22d8a510c44b68a408a962764482025d, type: 3}
       propertyPath: m_Name
-      value: PizzaDestroyed
+      value: KebuDestroyed
       objectReference: {fileID: 0}
     - target: {fileID: 6977884869202585073, guid: 22d8a510c44b68a408a962764482025d, type: 3}
       propertyPath: m_RootOrder
@@ -58,6 +58,6 @@ PrefabInstance:
     - target: {fileID: 7791255803884996739, guid: 22d8a510c44b68a408a962764482025d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6d9e8d3a7cace724abb33d66f343b25e, type: 3}
+      objectReference: {fileID: 21300000, guid: 4c43f53270d3dd04988896bcb6eb06ee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d8a510c44b68a408a962764482025d, type: 3}

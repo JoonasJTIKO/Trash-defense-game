@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: destroyed
       value: 
       objectReference: {fileID: 5038216082598628541, guid: 9032ce9a31b63434aaab5b2218980f27, type: 3}
+    - target: {fileID: 1929966734983288359, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
+      propertyPath: destroyed1
+      value: 
+      objectReference: {fileID: 5038216082598628541, guid: 9032ce9a31b63434aaab5b2218980f27, type: 3}
     - target: {fileID: 7809075736653685060, guid: e07c4d504715f464b8959968fa0f9346, type: 3}
       propertyPath: m_Name
       value: Special1 Variant

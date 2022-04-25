@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refundAmount: 150
   particle: {fileID: 8725200543984306485, guid: 98430e29f84dd9c44886144b4a5ce2ed, type: 3}
+  sound: {fileID: 2152399217268691195, guid: c0ea6f4a1cd84c844a86dc9662e2cad9, type: 3}
 --- !u!50 &4017762882656626051
 Rigidbody2D:
   serializedVersion: 4
@@ -366,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
-  projectile: {fileID: 1817609888514052528, guid: 921d39273c4887b40a577cbdf4dbf0a2, type: 3}
+  projectile: {fileID: 3447092681270753136, guid: 8dc411b4a0199244cbf8de2ba4841bc4, type: 3}
   fireRate: 4
   range: 3
   object1: {fileID: 0}
