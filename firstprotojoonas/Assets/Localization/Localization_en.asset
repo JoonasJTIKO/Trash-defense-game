@@ -199,5 +199,9 @@ MonoBehaviour:
     m_Localized: Time's up!
     m_Metadata:
       m_Items: []
+  - m_Id: 9808558365990912
+    m_Localized: Mute
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
