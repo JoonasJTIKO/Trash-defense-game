@@ -15,6 +15,8 @@ namespace towerdefense
         [SerializeField]
         private int rewardAmount;
 
+        private AudioSortingScene audio;
+
         private PlayerMovement playerScript;
 
 
@@ -24,6 +26,7 @@ namespace towerdefense
         // Start is called before the first frame update
         void Start()
         {
+            audio = GameObject.Find("Audio System").GetComponent<AudioSortingScene>();
             ui = FindObjectOfType<MoneyUI>();
         }
         void OnTriggerEnter2D(Collider2D col)
@@ -32,6 +35,7 @@ namespace towerdefense
             {
                 ui.AddMoney(rewardAmount);
                 playerScript.speed = playerScript.speed * 1.05f;
+                audio.playCorrectTrash();
                 Destroy(this.gameObject);
             }
             else if (col.gameObject.tag == "Player" && !alreadyAttached)
@@ -40,12 +44,14 @@ namespace towerdefense
                 this.transform.parent = col.transform;
                 playerScript.setChildObject(this.gameObject);
                 alreadyAttached = true;
+                audio.playPickupTrash();
             }
             else if (col.gameObject.tag != "Trash" && col.gameObject.tag != "Player" && col.gameObject.tag != "Turret")
             {
                 //EI Massiii
                 Debug.Log("Wrong bin idiot");
                 playerScript.removeChildObject();
+                audio.playWrongTrash();
                 Destroy(this.gameObject);
             }
         }

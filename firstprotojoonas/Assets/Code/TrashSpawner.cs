@@ -10,21 +10,27 @@ namespace towerdefense
     {
         int cardboardToSpawn;
         [SerializeField]
-        public GameObject cardBoardPrefab;
+        public GameObject cardBoardPrefab1;
+        [SerializeField]
+        public GameObject cardBoardPrefab2;
+        [SerializeField]
+        public GameObject cardBoardPrefab3;
 
         int metalToSpawn;
         [SerializeField]
-        public GameObject metalPrefab;
+        public GameObject metalPrefab1;
+        [SerializeField]
+        public GameObject metalPrefab2;
 
         int plasticToSpawn;
-
         [SerializeField]
         public GameObject plasticPrefab;
 
         int bioToSpawn;
-
         [SerializeField]
-        public GameObject bioPrefab;
+        public GameObject bioPrefab1;
+        [SerializeField]
+        public GameObject bioPrefab2;
 
         [SerializeField]
         private float spawnInterval;
@@ -48,6 +54,8 @@ namespace towerdefense
 
         private SceneLoader sceneLoaderScript;
         private GameObject[] trashList;
+        [SerializeField]
+        public GameObject[] allTrashPrefabs;
 
 
         void Awake()
@@ -73,26 +81,36 @@ namespace towerdefense
         private void addTrashToList()
         {
             int x = 0;
-            for (int i = 0; i < cardboardToSpawn; i++)
+            // for (int i = 0; i < cardboardToSpawn; i++)
+            // {
+            //     trashList[x] = cardBoardPrefab1;
+            //     x++;
+            // }
+            // for (int i = 0; i < metalToSpawn; i++)
+            // {
+            //     trashList[x] = metalPrefab1;
+            //     x++;
+            // }
+            // for (int i = 0; i < plasticToSpawn; i++)
+            // {
+            //     trashList[x] = plasticPrefab;
+            //     x++;
+            // }
+            // for (int i = 0; i < bioToSpawn; i++)
+            // {
+            //     trashList[x] = bioPrefab1;
+            //     x++;
+            // }
+            for (int i = 0; i < totalTrash; i++)
             {
-                trashList[x] = cardBoardPrefab;
-                x++;
+                trashList[i] = getRandomPrefab();
             }
-            for (int i = 0; i < metalToSpawn; i++)
-            {
-                trashList[x] = metalPrefab;
-                x++;
-            }
-            for (int i = 0; i < plasticToSpawn; i++)
-            {
-                trashList[x] = plasticPrefab;
-                x++;
-            }
-            for (int i = 0; i < bioToSpawn; i++)
-            {
-                trashList[x] = bioPrefab;
-                x++;
-            }
+
+        }
+
+        private GameObject getRandomPrefab()
+        {
+            return allTrashPrefabs[Random.Range(0, allTrashPrefabs.Length)];
         }
 
         public IEnumerator spawnTrash()
