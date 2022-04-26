@@ -1,46 +1,46 @@
 fileFormatVersion: 2
-guid: 23798043c7331884aa30f3b432cb074a
+guid: d6dbbb0eeea892a40b0a73a3f5bc0c6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8093849712242022542
-    second: TextBubbleSheet_0
+      213: -7654100740018902192
+    second: TextBubbleSheet 1_0
   - first:
-      213: 8316567055366028539
-    second: TextBubbleSheet_1
+      213: 7859698800063504935
+    second: TextBubbleSheet 1_1
   - first:
-      213: -1990914928299640564
-    second: TextBubbleSheet_2
+      213: -3188664538824497835
+    second: TextBubbleSheet 1_2
   - first:
-      213: -9149892042954721455
-    second: TextBubbleSheet_3
+      213: 6092570011963934934
+    second: TextBubbleSheet 1_3
   - first:
-      213: 4281989978734298487
-    second: TextBubbleSheet_4
+      213: -4452870584160404274
+    second: TextBubbleSheet 1_4
   - first:
-      213: -3281472057580687874
-    second: TextBubbleSheet_5
+      213: 3146619369651734658
+    second: TextBubbleSheet 1_5
   - first:
-      213: -4343988333658115836
-    second: TextBubbleSheet_6
+      213: 5261863102859116071
+    second: TextBubbleSheet 1_6
   - first:
-      213: -2333307006615947818
-    second: TextBubbleSheet_7
+      213: 2266882506358699468
+    second: TextBubbleSheet 1_7
   - first:
-      213: -7165052902621359830
-    second: TextBubbleSheet_8
+      213: 7659836322901609112
+    second: TextBubbleSheet 1_8
   - first:
-      213: 93209059906154089
-    second: TextBubbleSheet_9
+      213: -3732896400787426580
+    second: TextBubbleSheet 1_9
   - first:
-      213: 4700671767496349844
-    second: TextBubbleSheet_10
+      213: -7950900079932786232
+    second: TextBubbleSheet 1_10
   - first:
-      213: -556854598164224763
-    second: TextBubbleSheet_11
+      213: -2056310753238223008
+    second: TextBubbleSheet 1_11
   - first:
-      213: 7765115751375219988
-    second: TextBubbleSheet_12
+      213: -8689891296002148652
+    second: TextBubbleSheet 1_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -107,7 +107,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,7 +119,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,7 +131,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TextBubbleSheet_0
+      name: TextBubbleSheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 277aa6cd19edcaf80800000000000000
-      internalID: -8093849712242022542
+      spriteID: 05b6e1c1eeb27c590800000000000000
+      internalID: -7654100740018902192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_1
+      name: TextBubbleSheet 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfcfecd7ca16a6370800000000000000
-      internalID: 8316567055366028539
+      spriteID: 722695b8a62431d60800000000000000
+      internalID: 7859698800063504935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_2
+      name: TextBubbleSheet 1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c097da8cb69de54e0800000000000000
-      internalID: -1990914928299640564
+      spriteID: 5552b770f769fb3d0800000000000000
+      internalID: -3188664538824497835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_3
+      name: TextBubbleSheet 1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 157b2864aad050180800000000000000
-      internalID: -9149892042954721455
+      spriteID: 6d8ce4465282d8450800000000000000
+      internalID: 6092570011963934934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_4
+      name: TextBubbleSheet 1_4
       rect:
         serializedVersion: 2
         x: 256
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7758d3ed23fac6b30800000000000000
-      internalID: 4281989978734298487
+      spriteID: ecc3558cbc93432c0800000000000000
+      internalID: -4452870584160404274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_5
+      name: TextBubbleSheet 1_5
       rect:
         serializedVersion: 2
         x: 320
@@ -261,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd6883bc8ed572d0800000000000000
-      internalID: -3281472057580687874
+      spriteID: 288847b25a90bab20800000000000000
+      internalID: 3146619369651734658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_6
+      name: TextBubbleSheet 1_6
       rect:
         serializedVersion: 2
         x: 384
@@ -282,14 +282,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 401fddf30ad07b3c0800000000000000
-      internalID: -4343988333658115836
+      spriteID: 72ef6ae0d94e50940800000000000000
+      internalID: 5261863102859116071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_7
+      name: TextBubbleSheet 1_7
       rect:
         serializedVersion: 2
         x: 0
@@ -303,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5f9bec3ad6e9fd0800000000000000
-      internalID: -2333307006615947818
+      spriteID: cc5be0b01a5957f10800000000000000
+      internalID: 2266882506358699468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_8
+      name: TextBubbleSheet 1_8
       rect:
         serializedVersion: 2
         x: 64
@@ -324,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a215f5ed85e909c90800000000000000
-      internalID: -7165052902621359830
+      spriteID: 89a4f285d843d4a60800000000000000
+      internalID: 7659836322901609112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_9
+      name: TextBubbleSheet 1_9
       rect:
         serializedVersion: 2
         x: 128
@@ -345,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96eed8965252b4100800000000000000
-      internalID: 93209059906154089
+      spriteID: ce23bbf4086123cc0800000000000000
+      internalID: -3732896400787426580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_10
+      name: TextBubbleSheet 1_10
       rect:
         serializedVersion: 2
         x: 192
@@ -366,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498d35b31142c3140800000000000000
-      internalID: 4700671767496349844
+      spriteID: 8c93bf2c08ab8a190800000000000000
+      internalID: -7950900079932786232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_11
+      name: TextBubbleSheet 1_11
       rect:
         serializedVersion: 2
         x: 256
@@ -387,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 505e0ec71b7a548f0800000000000000
-      internalID: -556854598164224763
+      spriteID: 0677b65c3448673e0800000000000000
+      internalID: -2056310753238223008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TextBubbleSheet_12
+      name: TextBubbleSheet 1_12
       rect:
         serializedVersion: 2
         x: 320
@@ -408,8 +408,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41da28072ab33cb60800000000000000
-      internalID: 7765115751375219988
+      spriteID: 4d6780548ed476780800000000000000
+      internalID: -8689891296002148652
       vertices: []
       indices: 
       edges: []
