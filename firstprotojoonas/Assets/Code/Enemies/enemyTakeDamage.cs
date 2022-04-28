@@ -28,6 +28,8 @@ namespace towerdefense
         [SerializeField]
         private GameObject particle1;
 
+        private bool destroyed = false;
+
         void Awake()
         {
             pathFollow = GetComponent<followPath>();
@@ -42,18 +44,22 @@ namespace towerdefense
             {
                 health--;
             }
-            if (col.gameObject.tag == "SmallBullet")
+            else if (col.gameObject.tag == "SmallBullet")
             {
                 health -= 0.75F;
             }
-            if (col.gameObject.tag == "Melee")
+            else if (col.gameObject.tag == "Melee")
             {
                 health--;
             }
             if (health <= 0)
             {
-                enemyCounter.RemoveEnemy(type);
                 Destroy(this.gameObject);
+                if(!destroyed)
+                {
+                    enemyCounter.RemoveEnemy(type);
+                    destroyed = true;
+                }
                 if(destroyed1 != null)
                 {
                     GameObject destroyedIns = Instantiate(destroyed1, (Vector2)transform.position, transform.rotation);
