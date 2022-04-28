@@ -35,6 +35,9 @@ namespace towerdefense
         [SerializeField]
         private CircleCollider2D rangeCollider;
 
+        [SerializeField]
+        public int maxUpgrades;
+
         void Awake()
         {
             audioSource = GetComponent<AudioSource>();

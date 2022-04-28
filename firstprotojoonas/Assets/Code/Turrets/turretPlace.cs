@@ -37,12 +37,13 @@ namespace towerdefense
         [SerializeField]
         private GameObject particle;
         
-
+        private RoundStart roundStart;
 
         void Start() 
         {
             parentObject = GameObject.Find("Everything");
             moneyUI = FindObjectOfType<MoneyUI>();
+            roundStart = FindObjectOfType<RoundStart>();
         }
 
         // will spawn the turret, enable the correct UI elements, take money from the player and disable the placement point
@@ -52,7 +53,10 @@ namespace towerdefense
             placedTurret = Instantiate(spawnObject[objectNumber], turretPos, transform.rotation, parentObject.transform);
             Instantiate(turretBase, turretPos, transform.rotation, placedTurret.transform);
             ShopUI.SetActive(true);
-            StartGame.SetActive(true);
+            if(roundStart.roundStarted == false)
+            {
+                StartGame.SetActive(true);
+            }
             this.gameObject.SetActive(false);
             this.gameObject.transform.SetParent(usedTurretPoints.transform);
             ShopUI.GetComponent<ShopUI>().DeactivatePlacePoints();

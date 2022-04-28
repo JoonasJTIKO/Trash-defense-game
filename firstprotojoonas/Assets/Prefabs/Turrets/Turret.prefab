@@ -272,6 +272,7 @@ MonoBehaviour:
   object2: {fileID: 5115742538752015169}
   force: 500
   rangeCollider: {fileID: 5115742538752015171}
+  maxUpgrades: 2
 --- !u!58 &5115742538752015171
 CircleCollider2D:
   m_ObjectHideFlags: 0
