@@ -32,6 +32,9 @@ namespace towerdefense
         private Vector2 defaultRotate;
         private AudioSource audioSource;
 
+        [SerializeField]
+        private CircleCollider2D rangeCollider;
+
         void Awake()
         {
             audioSource = GetComponent<AudioSource>();
@@ -159,6 +162,7 @@ namespace towerdefense
             }
             if(stat == "range")
             {
+                rangeCollider.radius += 1;
                 range += 1;
             }
         }

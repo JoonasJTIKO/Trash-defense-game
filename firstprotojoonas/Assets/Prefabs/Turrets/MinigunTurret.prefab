@@ -373,6 +373,7 @@ MonoBehaviour:
   object1: {fileID: 0}
   object2: {fileID: 8999686980419860094}
   force: 500
+  rangeCollider: {fileID: 8999686980419860092}
 --- !u!58 &8999686980419860092
 CircleCollider2D:
   m_ObjectHideFlags: 0

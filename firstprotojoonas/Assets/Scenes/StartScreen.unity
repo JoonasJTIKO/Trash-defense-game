@@ -3480,7 +3480,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 530, y: 100}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1415772762
 MonoBehaviour:
@@ -3502,7 +3502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Trash defense
+  m_text: Trash defender
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a5369d6f2a922f443896a90554fd22ff, type: 2}
   m_sharedMaterial: {fileID: -4551979644139639361, guid: a5369d6f2a922f443896a90554fd22ff, type: 2}
@@ -3511,8 +3511,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255540
-  m_fontColor: {r: 0.70456433, g: 1, b: 0, a: 1}
+    rgba: 4280348927
+  m_fontColor: {r: 1, g: 0.94117653, b: 0.1254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
