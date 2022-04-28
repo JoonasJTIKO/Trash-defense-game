@@ -51,49 +51,11 @@ namespace towerdefense
         // Update is called once per frame
         void Update()
         {
-            // if (Input.GetAxis("Fire1") > 0f)
-            // {
-            //     lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //     moving = true;
-            //     anim.SetBool("Walking", true);
-            //     if (transform.position.x < lastClickedPos.x)
-            //     {
-            //         // transform.localScale = new Vector2(-1.5f, transform.localScale.y);
-            //         this.GetComponent<SpriteRenderer>().flipX = false;
-            //         if (attachedTrash)
-            //         {
-            //             attachedTrash.transform.localPosition = new Vector2(0.3f, 0f);
-            //         }
-            //     }
-            //     else
-            //     {
-            //         // transform.localScale = new Vector2(1.5f, transform.localScale.y);
-            //         this.GetComponent<SpriteRenderer>().flipX = true;
-            //         if (attachedTrash)
-            //         {
-            //             attachedTrash.transform.localPosition = new Vector2(-0.3f, 0f);
-            //         }               
-            //     }
-            //     // transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
-            // }
-
-            // if (moving && (Vector2)transform.position != lastClickedPos)
-            // {
-            //     float step = speed * Time.deltaTime;
-            //     transform.position = Vector2.MoveTowards(transform.position, lastClickedPos, step);
-            // }
-            // else
-            // {
-            //     moving = false;
-            //     anim.SetBool("Walking", false);
-            // }
-            // // if (transform.right != (lastClickedPos - new Vector2(transform.position.x, transform.position.y))){
-            // //     transform.right = lastClickedPos - new Vector2(transform.position.x, transform.position.y);
-            // // }
             joystickMove();
             restrictMove();
         }
 
+        //restrict player character from moving beyond limits
         private void restrictMove()
         {
             if (this.transform.position.x < -8.5f)
@@ -153,21 +115,15 @@ namespace towerdefense
             }
         }
 
-        void FixedUpdate()
-        {
-            
-        }
-
+        //attach trash object to player
         public void setChildObject(GameObject a)
         {
             attachedTrash = a;
-            // xpositionToFlip = attachedTrash.transform.position.x;
         }
 
         public void removeChildObject()
         {
             attachedTrash = null;
-            // xpositionToFlip = null;
         }
 
         public void startSpeedBoost()

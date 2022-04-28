@@ -38,8 +38,6 @@ namespace towerdefense
         [SerializeField]
         private float sortingTimer = 30f;
 
-        // private GameObject destroyedTrash;
-
         [SerializeField]
         public GameObject timeOver;
 
@@ -54,6 +52,8 @@ namespace towerdefense
 
         private SceneLoader sceneLoaderScript;
         private GameObject[] trashList;
+
+        //all different trash prefabs
         [SerializeField]
         public GameObject[] allTrashPrefabs;
 
@@ -64,6 +64,7 @@ namespace towerdefense
         }
         void Start()
         {
+            //get ui and trahs amount variables from previous scene
             trashUI = FindObjectOfType<TrashUI>();
             cardboardToSpawn = TrashUI.cardboardAmount;
             metalToSpawn = TrashUI.metalAmount;
@@ -71,6 +72,7 @@ namespace towerdefense
             bioToSpawn = TrashUI.bioAmount;
             totalTrash = cardboardToSpawn + metalToSpawn + plasticToSpawn + bioToSpawn;
             trashList = new GameObject[totalTrash];
+            //set how fast the trash spawn
             spawnInterval = sortingTimer / totalTrash;
             sceneChangerObject = GameObject.Find("SceneChanger");
             sceneLoaderScript = sceneChangerObject.GetComponent<SceneLoader>();
@@ -80,27 +82,6 @@ namespace towerdefense
 
         private void addTrashToList()
         {
-            int x = 0;
-            // for (int i = 0; i < cardboardToSpawn; i++)
-            // {
-            //     trashList[x] = cardBoardPrefab1;
-            //     x++;
-            // }
-            // for (int i = 0; i < metalToSpawn; i++)
-            // {
-            //     trashList[x] = metalPrefab1;
-            //     x++;
-            // }
-            // for (int i = 0; i < plasticToSpawn; i++)
-            // {
-            //     trashList[x] = plasticPrefab;
-            //     x++;
-            // }
-            // for (int i = 0; i < bioToSpawn; i++)
-            // {
-            //     trashList[x] = bioPrefab1;
-            //     x++;
-            // }
             for (int i = 0; i < totalTrash; i++)
             {
                 trashList[i] = getRandomPrefab();
@@ -108,11 +89,13 @@ namespace towerdefense
 
         }
 
+        //returns random prefab from list
         private GameObject getRandomPrefab()
         {
             return allTrashPrefabs[Random.Range(0, allTrashPrefabs.Length)];
         }
 
+        //instantiate trashprefabs from trashList in random position within set area
         public IEnumerator spawnTrash()
         {
             for (int i = 0; i < trashList.Length; i++)

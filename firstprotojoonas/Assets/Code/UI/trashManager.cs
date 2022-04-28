@@ -31,6 +31,7 @@ namespace towerdefense
         }
         void OnTriggerEnter2D(Collider2D col)
         {
+            //if trash is put in correct bin, speed up player and give money
             if (col.gameObject.tag == this.trashType.ToString())
             {
                 ui.AddMoney(rewardAmount);
@@ -38,6 +39,7 @@ namespace towerdefense
                 audio.playCorrectTrash();
                 Destroy(this.gameObject);
             }
+            //if tag is player attach to player
             else if (col.gameObject.tag == "Player" && !alreadyAttached)
             {
                 playerScript = col.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
@@ -46,9 +48,9 @@ namespace towerdefense
                 alreadyAttached = true;
                 audio.playPickupTrash();
             }
+            //if tag is anything else destroy and do nothing
             else if (col.gameObject.tag != "Trash" && col.gameObject.tag != "Player" && col.gameObject.tag != "Turret")
             {
-                //EI Massiii
                 Debug.Log("Wrong bin idiot");
                 playerScript.removeChildObject();
                 audio.playWrongTrash();

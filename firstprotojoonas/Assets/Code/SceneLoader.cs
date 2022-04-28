@@ -9,6 +9,7 @@ namespace towerdefense
     {
         static int currentScene = 0;
 
+        //every gameobject in scene that needs to be turned off when going to sorting scene
         private GameObject everything;
 
         [SerializeField]
@@ -46,22 +47,6 @@ namespace towerdefense
             {
                 everything = GameObject.Find("Everything");
             }
-            if (currentScene == 1)
-            {
-                checkForTrashLeft();
-            }
-        }
-
-        private void checkForTrashLeft()
-        {
-            // if (GameObject.FindGameObjectsWithTag("Trash").Length == 0)
-            // {
-            //     SceneManager.UnloadSceneAsync("Playermovement");
-            //     currentScene = 0;
-            //     everything.SetActive(true);
-            //     trashUI.Reset();
-            //     // Start next level
-            // }
         }
 
         public void swapScene()

@@ -14,11 +14,8 @@ namespace towerdefense
 
         void OnTriggerEnter2D(Collider2D col)
         {
-
-            Debug.Log("Edes tämä");
             if (col.gameObject.tag == "Player")
             {
-                Debug.Log("asddd111");
                 col.gameObject.GetComponent<PlayerMovement>().startSpeedBoost();
                 Destroy(this.gameObject);
             }
