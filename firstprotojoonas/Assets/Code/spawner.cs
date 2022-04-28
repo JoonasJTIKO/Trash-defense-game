@@ -90,6 +90,8 @@ namespace towerdefense
 			}
 		}
 
+		
+		// resets values back to their inital values, increases spawn amount and reduces spawn delay for next enabling
 		private void OnDisable()
 		{
 			spawnAmount = originalSpawnAmount + roundIncrease;
@@ -103,6 +105,8 @@ namespace towerdefense
 			specialTime = originalSpecialTime;
 		}
 
+		// in normal mode spawns random enemies from list, and special enemies at determined times
+		// in endless mode special enemies are spawned at set intervals instead
 		private void Spawn()
 		{
 			if(!setSpawner.Endless && spawnAmount == originalSpawnAmount - (specialTimes[specialIndex] - 1))

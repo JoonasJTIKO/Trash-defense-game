@@ -35,6 +35,8 @@ namespace towerdefense
             }
         }
 
+        // in standard mode will allow player to move to sorting if not final round, or back to menu if final round
+        // in endless mode always allows player to move to sorting
         public void Win()
         {
             if(!endless)

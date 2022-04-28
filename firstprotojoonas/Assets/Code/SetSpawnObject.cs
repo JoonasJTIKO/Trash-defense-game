@@ -6,6 +6,8 @@ namespace towerdefense
 {
     public class SetSpawnObject : MonoBehaviour
     {
+        
+        // enables all placepoints that are available to be used, and sets the correct turret to be spawned there
         public void setNextSpawn(int number)
         {
             foreach(Transform placePoint in transform)

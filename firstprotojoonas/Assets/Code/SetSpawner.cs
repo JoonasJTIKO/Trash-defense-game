@@ -31,6 +31,8 @@ namespace towerdefense
             counter = GetComponent<EnemyCounter>();
         }
 
+        // enables current spawner from the list, and prepares next spawner for next round
+        // in endless mode there is only one spawner
         public void SelectSpawner()
         {
             spawnAmount = spawners[index].GetComponent<spawner>().spawnAmount;

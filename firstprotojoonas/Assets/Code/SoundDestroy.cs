@@ -15,6 +15,7 @@ namespace towerdefense
             lifetime = source.clip.length;
         }
 
+        // destroys the object after the audio clip has finished playing
         void Update()
         {
             if(lifetime <= 0)

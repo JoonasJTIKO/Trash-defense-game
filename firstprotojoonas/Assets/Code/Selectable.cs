@@ -7,6 +7,7 @@ namespace towerdefense
 {
     public class Selectable : MonoBehaviour, IPointerDownHandler
     {
+        // does different things based on what the tag of the clicked object is
         public void OnPointerDown(PointerEventData eventData)
         {
             Debug.Log("click");

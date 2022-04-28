@@ -23,6 +23,8 @@ namespace towerdefense
             ui = FindObjectOfType<MoneyUI>();
             image = GetComponent<Image>();
         }
+        
+        // sets button inactive or active based on if player can afford the tower, also changes button appearance
         void Update()
         {
             priceText.text = price.ToString();

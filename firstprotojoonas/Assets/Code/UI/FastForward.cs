@@ -7,6 +7,8 @@ namespace towerdefense
     public class FastForward : MonoBehaviour
     {
         private bool speedIsNormal = true;
+        
+        // sets game speed to double if normal and back to normal if double
         public void ChangeSpeed()
         {
             if(speedIsNormal == true)
@@ -21,6 +23,8 @@ namespace towerdefense
             }
         }
 
+        
+        // sets game speed to normal
         public void Reset()
         {
             Time.timeScale = 1;

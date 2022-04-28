@@ -12,6 +12,7 @@ namespace towerdefense
         [SerializeField]
         private GameObject placePoints;
 
+        // sets placement points inactive, also enables tutorial popup in tutorial level
         public void DeactivatePlacePoints()
         {
             foreach(Transform item in placePoints.transform)

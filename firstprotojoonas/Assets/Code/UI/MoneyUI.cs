@@ -17,12 +17,16 @@ namespace towerdefense
         {
             get { return currentMoney; }
         }
+        
+        // reduces players money by amount
         public void SetMoney(float amount)
         {
             nameText.text = (currentMoney - amount).ToString();
             currentMoney = currentMoney - amount;
         }
 
+        
+        // adds amount to players money
         public void AddMoney(float amount)
         {
             nameText.text = (currentMoney + amount).ToString();
