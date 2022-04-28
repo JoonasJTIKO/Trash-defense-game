@@ -16,7 +16,7 @@ namespace towerdefense
             body = GetComponent<Rigidbody2D>();
         }
 
-        // Update is called once per frame
+        // will destroy the gameObject after a set time, applies torque aka rotation to the gameObject spinning it
         void Update()
         {
             if(lifetime <= 0)

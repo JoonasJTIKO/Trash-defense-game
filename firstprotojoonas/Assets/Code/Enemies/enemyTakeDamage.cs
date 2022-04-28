@@ -34,8 +34,22 @@ namespace towerdefense
             enemyCounter = FindObjectOfType<EnemyCounter>();
         }
 
-        void Update()
+        // will reduce the enemys health based on what type of projectile hits it, if health reaches 0 enemy will be destroyed, removed from counter, added to trash inventory and
+        // the death effects will be spawned
+        void OnCollisionEnter2D(Collision2D col)
         {
+            if (col.gameObject.tag == "Bullet")
+            {
+                health--;
+            }
+            if (col.gameObject.tag == "SmallBullet")
+            {
+                health -= 0.75F;
+            }
+            if (col.gameObject.tag == "Melee")
+            {
+                health--;
+            }
             if (health <= 0)
             {
                 enemyCounter.RemoveEnemy(type);
@@ -54,22 +68,7 @@ namespace towerdefense
             }
         }
 
-        void OnCollisionEnter2D(Collision2D col)
-        {
-            if (col.gameObject.tag == "Bullet")
-            {
-                health--;
-            }
-            if (col.gameObject.tag == "SmallBullet")
-            {
-                health -= 0.75F;
-            }
-            if (col.gameObject.tag == "Melee")
-            {
-                health--;
-            }
-        }
-
+        // will slow the enemy if a slowing bullet hits it
         void OnTriggerEnter2D(Collider2D col)
         {
             if (col.gameObject.tag == "SlowingBullet")

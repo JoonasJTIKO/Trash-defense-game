@@ -24,8 +24,8 @@ namespace towerdefense
         private GameObject turretMenu;
 
         [SerializeField]
-        private GameObject object1, object2;     // Player ship and turret, respectively
-        private float Distance_; // shows distance between 2 objects in unity
+        private GameObject object1, object2;
+        private float Distance_;
 
         [SerializeField]
         private float force;
@@ -47,7 +47,8 @@ namespace towerdefense
             }
         }
 
-        // Update is called once per frame
+        // finds the turretbase and turretmenu so they dont rotate with the turret
+        // if not currently targeting an enemy, finds the closest one, if targeting an enemy faces it, shoots it at set fire rate, and plays sounds and animations
         void Update()
         {
             if (turretBase == null)
@@ -126,6 +127,8 @@ namespace towerdefense
                 timeBtwShots -= Time.deltaTime;
             }
         }
+        
+        // adds enemies that enter the turrets range to list of potential targets
         void OnTriggerEnter2D(Collider2D col)
         {
             if (col.gameObject.tag == "Enemy")
@@ -133,6 +136,8 @@ namespace towerdefense
                 NearGameobjects.Add(col.gameObject);
             }
         }
+        
+        // removes enemies from potential targets as they leave turrets range
         void OnTriggerExit2D(Collider2D col)
         {
             if (col.gameObject.tag == "Enemy")
@@ -145,6 +150,7 @@ namespace towerdefense
             }
         }
 
+        // upgrades the desired stat, checks are done before calling this method
         public void UpgradeStat(string stat)
         {
             if(stat == "fireRate")

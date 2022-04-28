@@ -40,6 +40,8 @@ namespace towerdefense
             }
         }
 
+        // will move towards the current target waypoint, and start moving to the next one once it reaches it
+        // waypoints must be in the desired order in the list
         private void Move()
         {
             if(currentWaypoint <= waypoints.Length - 1)
@@ -52,6 +54,7 @@ namespace towerdefense
             }
         }
         
+        // will change the speed of the enemy for an amount of time, unless enemy is already affected
         public void SetSpeed(float changeAmount, float slowTime)
         {
             if(!slowed)

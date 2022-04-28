@@ -24,6 +24,14 @@ namespace towerdefense
         [SerializeField]
         private TMP_Text metalText;
 
+        void Start()
+        {
+            bioAmount = 0;
+            cardboardAmount = 0;
+            plasticAmount = 0;
+            metalAmount = 0;
+        }
+        
         public void AddAmount(int amount, string type)
         {
             if(type == "Cardboard")

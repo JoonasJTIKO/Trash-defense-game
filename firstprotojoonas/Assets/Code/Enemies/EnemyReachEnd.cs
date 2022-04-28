@@ -19,6 +19,7 @@ namespace towerdefense
             endGame = FindObjectOfType<EndGame>();
         }
 
+        // will destroy an enemy once they reach the endpoint and reduce the counter by one, if too many enemies reach the end the round will end in a loss
         void OnCollisionEnter2D(Collision2D col)
         {
             if(col.gameObject.tag == "Enemy")

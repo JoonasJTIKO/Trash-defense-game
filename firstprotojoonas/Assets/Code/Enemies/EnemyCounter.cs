@@ -20,6 +20,7 @@ namespace towerdefense
             trashUI = FindObjectOfType<TrashUI>();
         }
 
+        //reduce the counter by one, add destroyed trash to "trash inventory" unless otherwise specified, end the round if the counter reaches 0
         public void RemoveEnemy(string type, bool addDestroyed = true)
         {
             maxEnemyCount--;

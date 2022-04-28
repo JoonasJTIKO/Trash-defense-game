@@ -30,6 +30,9 @@ namespace towerdefense
             parent = this.transform.parent;
             moneyUI = FindObjectOfType<MoneyUI>();
         }
+        
+        // will destroy the tower, refund all money spent on it and spawn the related effects
+        // will re-enable the placement point the turret was placed on, z is -0.1 because of raycast weirdness
         public void Destroy()
         {
             foreach(Transform item in usedTurretPoints.transform)

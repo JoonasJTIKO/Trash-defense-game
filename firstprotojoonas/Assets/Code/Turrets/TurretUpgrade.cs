@@ -33,6 +33,7 @@ namespace towerdefense
             destroy = GetComponentInParent<TurretDestroy>();
         }
 
+        // changes appearance of button based on if player has enough money to upgrade
         void Update()
         {
             if(maxUpgrades > 0 && moneyUI.CurrentMoney >= price)
@@ -47,6 +48,7 @@ namespace towerdefense
             }
         }
 
+        // if player can afford upgrade, upgrades the correct stat, takes money, adds money to amount refunded if tower is destroyed and plays particle effect with sound
         public void Upgrade()
         {
             if (maxUpgrades > 0 && moneyUI.CurrentMoney >= price)

@@ -10,6 +10,8 @@ namespace towerdefense
         private GameObject menu;
         private bool menuActive = false;
         private GameObject openedMenu;
+        
+        // will open and close the turret upgrade / sell menu
         public void OpenMenu()
         {
             if(!menuActive)

@@ -45,6 +45,7 @@ namespace towerdefense
             moneyUI = FindObjectOfType<MoneyUI>();
         }
 
+        // will spawn the turret, enable the correct UI elements, take money from the player and disable the placement point
         public void placeTurret()
         {
             turretPos = new Vector3 (transform.position.x, transform.position.y, 0);
@@ -59,6 +60,7 @@ namespace towerdefense
             Instantiate(particle, transform.position, transform.rotation);
         }
 
+        // used to determine which turret is to be placed
         public void SetObjectNumber(int number)
         {
             objectNumber = number;

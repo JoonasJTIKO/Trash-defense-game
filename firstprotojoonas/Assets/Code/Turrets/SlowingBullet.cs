@@ -19,6 +19,7 @@ namespace towerdefense
             }
         }
 
+        // after hitting an enemy the bullet will be destroyed after a delay
         void Update()
         {
             if(dissipate)
