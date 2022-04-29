@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f61abb4555e9934891731b48aa4fadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refundAmount: 150
+  refundAmount: 600
   particle: {fileID: 8725200543984306485, guid: 98430e29f84dd9c44886144b4a5ce2ed, type: 3}
   sound: {fileID: 2152399217268691195, guid: c0ea6f4a1cd84c844a86dc9662e2cad9, type: 3}
 --- !u!50 &4017762882656626051

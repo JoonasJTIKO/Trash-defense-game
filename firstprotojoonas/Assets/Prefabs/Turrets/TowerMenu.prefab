@@ -108,7 +108,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -137,7 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat: range
-  maxUpgrades: 2
   price: 200
   particle: {fileID: 6241377362711384394, guid: eaeea0a348f5a904090eb4c86fbd9e48, type: 3}
 --- !u!1 &2921019541113186644
@@ -248,7 +247,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -277,7 +276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat: fireRate
-  maxUpgrades: 2
   price: 300
   particle: {fileID: 6241377362711384394, guid: eaeea0a348f5a904090eb4c86fbd9e48, type: 3}
 --- !u!1 &4737725342407063939
